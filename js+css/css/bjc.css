@@ -399,8 +399,8 @@ img.noshadow {
     padding-top: 10px;
     padding-bottom: 10px;
     text-indent: 0em;
-    font-style: italic;
-    text-align: center;
+    /* font-style: italic; */ 
+    text-align: left;
 }
 
 .dialogue>div>span:not(.katex) {
