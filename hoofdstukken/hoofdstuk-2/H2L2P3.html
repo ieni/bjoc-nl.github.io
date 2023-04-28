@@ -20,10 +20,10 @@
     <div class="full">
         <h2>Klikken gebruiken om punten te tekenen</h2>
         <div class="learn">
-            <strong> Op de vorige pagina,</strong> heb je een vorm getekend gebaseerd op een lijst van
+            <strong> Op de vorige pagina</strong> heb je een vorm getekend gebaseerd op een lijst van
             punten die je hebt gekregen.
             <p>
-                <strong>Op deze pagina,</strong> ga je het proces van het verkrijgen van coördinaten
+                <strong>Op deze pagina</strong> ga je het proces van het verkrijgen van coördinaten
                 automatiseren door op de gewenste punten op je scherm te klikken.
             </p>
         </div>
@@ -33,13 +33,13 @@
             </div>
             <img class="imageRight" src="../../afb/icons/take-turns-speaking-mini.gif">
             <div>
-                <span>Alex:</span> "Het intypen van deze coördinaten is echt lastig. Laten we een programma schrijven
-                dat als we een afbeelding hebben, we op de hoekjes kunnen klikken waarna het programma dan de
-                coördinaten verzamelt."
+                <span>Alex:</span> 'Het intypen van deze coördinaten is echt lastig. Laten we een programma schrijven
+                zodat als we een afbeelding hebben, we op de hoeken kunnen klikken en het programma de
+                coördinaten laten verzamelen.'
             </div>
             <div>
-                <span>Bo:</span> "Fantastisch idee! Ik weet dat we afbeeldingen kunnen importeren als achtergrond,
-                dus het enige wat we hoeven te doen is..."
+                <span>Bo:</span> 'Fantastisch idee! Ik weet dat we afbeeldingen kunnen importeren als achtergrond,
+                dus het enige wat we hoeven te doen is...'
             </div>
         </div>
         <div class="forYouToDo" id="first">
@@ -47,26 +47,27 @@
                 <li> <a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H2L2-PuntenVangen"><img
                             class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a><br /> <img
-                        class="imageRight" src="../../afb/icons/save-mini.png" /> Exporteer je
-                    nieuwe tekenblokken en abstracte datatypes van je "H2L2-TekenVorm" project, importeer deze in het
+                        class="imageRight" src="../../afb/icons/save-mini.png" /> </li>Exporteer je
+                    nieuwe tekenblokken en abstracte datatypes van je 'H2L2-TekenVorm' project, importeer deze in het
                     bovenstaande nieuwe project en sla het project op.
-                </li>
+                </li><br />
+                <br />
                 <li> Selecteer een achtergrond naar keuze.
                     <div class="narrower">
                         <h4><strong>Je achtergrond klaarzetten</strong></h4>
                         <ol type="a">
                             <li> <strong>Klik op de speelveldknop</strong> onder het werkelijke speelveld. <br />
                                 <img class="indent" src="../../afb/h2/l2/other/p3-o1.png" alt="Geen Afbeelding"> </li>
-                            <li> <strong>Klik op het "Uiterlijken" tabblad</strong> boven in je scherm.<br /> <img
+                            <li> <strong>Klik op het 'Achtergronden' tabblad</strong> boven in je scherm.<br /> <img
                                     class="indent" src="../../afb/h2/l2/other/p3-o2.png" alt="Geen Afbeelding"> <br />
                             </li>
-                            <li> <strong>Selecteer of importeer een speelveld.</strong> In dit project, ga je twee
-                                geïmporteerde speelvelden vinden: <ul>
+                            <li> <strong>Selecteer of importeer een speelveld.</strong> In dit project vind je twee
+                                geïmporteerde speelvelden: <ul>
                                     <li>Een grafiek van het gemiddelde inkomen van Amerikaanse huishoudens per jaar
                                         (Bron: Federal Reserve Bank of St. Louis) </li>
-                                    <li>Een hoofdletter "E" (lettertype: Century Gothic Bold).</li> De grafiek is
+                                    <li>Een hoofdletter 'E' (lettertype: Century Gothic Bold).</li> De grafiek is
                                     typisch
-                                    binnen dataverwerking, wat een onderwerp is van Hoofdstuk 3. De "E" borduurt voort
+                                    binnen dataverwerking, wat een onderwerp is van Hoofdstuk 3. De 'E' borduurt voort
                                     op wat we op de vorige pagina hebben gedaan. Kies een van de achtergronden door er
                                     op te klikken.
                                 </ul>
@@ -77,33 +78,33 @@
             </ol>
         </div>
         <div class="dialogue">
-            <div><span>Alex:</span> "We moeten de <var>puntenlijst</var>variabele eerst initialiseren als een lege
-                lijst.""
+            <div><span>Alex:</span> 'We moeten de <var>puntenlijst</var>variabele eerst initialiseren als een lege
+                lijst.'
             </div>
-            <div><span>Bo:</span> "We weten al hoe we een sprite de muis kunnen laten volgen; dit deden we in <a
-                    href="../hoofdstuk-1/H1L5P1.html">Hoofdstuk 1 Les 5</a>."
+            <div><span>Bo:</span> 'We weten al hoe we een sprite de muis kunnen laten volgen; dit deden we in <a
+                    href="../hoofdstuk-1/H1L5P1.html">Hoofdstuk 1 Les 5</a>.'
             </div>
-            <div><span>Yasmine:</span> "Ja, en elke keer wanneer we klikken, willen we dat de positie aan een lijst
+            <div><span>Yasmine:</span> 'Ja, en elke keer wanneer we klikken, willen we dat de positie aan een lijst
                 wordt toegevoegd, zoals we deden in <a href="../hoofdstuk-1/H1L2P4.html"> Hoofdstuk 1, bij het "Groet
-                    Spelers" project</a>."
+                    Spelers" project</a>.'
             </div>
-            <div><span>Yasmine:</span> "Als we klikken, moeten we de gebruiker feedback geven dat de klik is
-                verwerkt.""
+            <div><span>Yasmine:</span> 'Als we klikken, moeten we de gebruiker feedback geven dat de klik is
+                verwerkt.'
             </div>
-            <div><span>Alex:</span> "Hoe bedoel je? Iets van een geluidje of zo?"</div>
-            <div><span>Yasmine:</span> "Misschien, maar ik dacht meer aan dat we elk punt kunnen markeren op de een of
-                andere manier, zodat we zeker weten dat de computer onze klikken ziet en verwerkt."
+            <div><span>Alex:</span> 'Hoe bedoel je? Iets van een geluidje of zo?'</div>
+            <div><span>Yasmine:</span> 'Misschien, maar ik dacht meer aan dat we elk punt kunnen markeren op de een of
+                andere manier, zodat we zeker weten dat de computer onze klikken ziet en verwerkt.'
             </div>
-            <div><span>Alex:</span> "Ik heb een idee! Er is een <img height="40" src="../../afb/h2/l2/blocks/p3-b1.png"
+            <div><span>Alex:</span> 'Ik heb een idee! Er is een <img height="40" src="../../afb/h2/l2/blocks/p3-b1.png"
                     alt="Geen Afbeelding"> blok dat een afbeelding stempelt van de sprite, precies waar die sprite zich
-                dan bevindt op het speelveld."
+                dan bevindt op het speelveld.'
             </div>
-            <div><span>Yasmine:</span> "Cool! Op die manier zal de sprite stempels achterlaten, die precies staan waar
-                de speler klikt."
+            <div><span>Yasmine:</span> 'Cool! Op die manier zal de sprite stempels achterlaten, die precies staan waar
+                de speler klikt.'
             </div>
             <div class="stagedir">
                 Alex, Bo, en Yasmine werken aan de code om hun ideeën te implementeren.
-                <br />
+                <br /><br />
                 <img class="center" data-gifffer="../../afb/h2/l2/videos/p3-v1.gif" height="350"
                     alt="Geen Afbeelding" />
             </div>
@@ -111,7 +112,7 @@
 
         <div class="forYouToDo">
             <ol start="3">
-                <li> Het bestand dat je hebt geladen bevat drie onafgemaakte scripts, eentje voor elk van deze
+                <li> Het bestand dat je hebt geladen bevat drie onafgemaakte scripts, één voor elk van deze
                     stappen. Maak al deze scripts af.
                     <div class="narrower">
                         Als je dit nog niet gedaan hebt, moet je
@@ -121,13 +122,13 @@
                     <ol>
                         <li>Geef eerst een passende beginwaarde aan de <var>puntenlijst</var>variabele.</li>
                         <li>In het tweede script, heb je een manier nodig om tegen de sprite te zeggen dat hij moet
-                            stoppen met het volgen van de muis. Vervang het <code>herhaal</code>blok met een blok dat
-                            net zolang herhaalt totdat de speler op de spatiebalk drukt.</li>
-                        <li>In het derde script, staat het <code>stempel</code>blok al goed, maar je zult de code
+                            stoppen met het volgen van de muis. Vervang het <code>herhaal</code>blok door een blok dat
+                            doorloopt totdat de speler op de spatiebalk drukt.</li>
+                        <li>In het derde script, staat het <code>stempel</code>blok al goed, maar zul je code
                             moeten schrijven die de positie van de muis toevoegt aan <var>puntenlijst</var>. Gebruik je
-                            abstracte data-type hiervoor.
-                            <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png"
-                                alt="Geen Afbeelding" /> </li>
+                            abstracte data-type hiervoor.<br />
+                            <img class="imageLeft" src="../../afb/icons/save-mini.png"
+                                alt="Geen Afbeelding" /> </li><br /><br />
                     </ol>
                 </li>
             </ol>
@@ -136,10 +137,10 @@
         <div class="takeItFurther">
             <br />
             Om punten interactief in te voeren, is de methode hierboven het enige wat je nodig hebt. Maar als je een
-            robuuster punten-verzamelprogramma wilt maken, heeft deze methode enkele nadelen:
+            robuuster programma voor het verzamelen van punten wilt maken, heeft deze methode enkele nadelen:
             <ul>
-                <li>Zelfs nadat je de sprite hebt verteld te stoppen met het volgen van de muis, is het "Wanneer ik ben
-                    aangeklikt"-script nog steeds klaar om te worden uitgevoerd, dus als je direct op de sprite klikt,
+                <li>Zelfs nadat je de sprite hebt verteld te stoppen met het volgen van de muis, is het 'Wanneer ik ben
+                    aangeklikt'-script nog steeds klaar om te worden uitgevoerd, dus als je direct op de sprite klikt,
                     zal het nog steeds punten toevoegen aan de lijst. Dat wil je misschien niet.</li>
                 <li>De lijst met punten staat altijd in dezelfde globale variabele. Dus wordt het rommelig om lijsten te
                     maken voor verschillende letters.</li>
@@ -149,9 +150,8 @@
                 </li>
                 <li>Hier vind je een <a
                         href="https://bjc.edc.org/bjc-r/cur/programming/2-complexity/old/5-click-points.html">
-                        alternatieve manier (in het Engels) </a> die een nieuw idee bevat dat je misschien interessant
-                    vindt. Er zijn eenvoudigere oplossingen dan deze, maar het idee hierachter is dat lastigere code
-                    vaak bruikbaarder is. </li>
+                        alternatieve aanpak (in het Engels) </a> met een nieuw idee dat je misschien aanspreekt. Er zijn 
+                        eenvoudigere oplossingen dan deze, maar het idee achter deze iets ingewikkelder code is heel bruikbaar. </li>
             </ol>
         </div>
 
