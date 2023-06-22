@@ -28,15 +28,16 @@
         <div class="vocabFullWidth">
         <p>Een <strong>predikaat</strong> is een blok dat altijd een <em>boolean</em> waarde meldt. <br />
             Predikaten rapporteren alleen <img height="20" class="inline nopadtb" src="../../afb/h2/l3/blocks/p1-b1.png" />
-            of <img height="20" class="inline nopadtb" src="../../afb/h2/l3/blocks/p1-b2.png" />. <br /> 
+            of <img height="20" class="inline nopadtb" src="../../afb/h2/l3/blocks/p1-b2.png" /> <br /> 
             In Snap<em>!</em>
             worden predikaatblokken weergegeven met zeshoekige blokken.</p>
         </div><br />
 
         <p> Je bent predikaten al eens eerder tegengekomen. Predikaten verwerken de <em>voorwaarden</em> die gebruikt
-            worden door <em>voorwaardelijke blokken</em> zoals <code>als</code> of <code>herhaal
+            worden door <em>voorwaardelijke blokken</em>, zoals <code>als</code> of <code>herhaal
                 tot</code>, om te beslissen wanneer ze iets moeten doen. <br /> 
-                Predikaten stellen een vraag, zoals 'Bezit de <var>spelerlijst</var> het <code>antwoord</code> van de speler?' <br />
+                Predikaten stellen een vraag, bijvoorbeeld: <br />
+                'Bezit de <var>spelerlijst</var> het <code>antwoord</code> van de speler?' <br />
                 
             <br />
             <a href="../hoofdstuk-1/H1L2P4.html"><img class="indent" height="150"
@@ -70,17 +71,19 @@
         </div>
         <div class="ifTime">
             <ol start="3">
-                <li> Verbeter je tekenscript zodanig dat de sprite altijd de muis volgt, maar alleen iets tekent
-                    wanneer de knop van de muis ingedrukt is, zodat je niet-verbonden vormen kunt tekenen.<br />
+                <li> Verbeter je tekenscript, zodanig dat de sprite altijd de muis volgt, maar alleen iets tekent
+                    wanneer de knop van de muis ingedrukt is. Op deze manier kun je losse, niet-verbonden vormen tekenen.<br />
+                    
                     <div class="endnote"> Zorg dat het versleepbaar-blok niet aangevinkt is boven het script gedeelte
-                        voordat je dit probeert (zodat Snap<em>!</em> niet denkt dat je een sprite probeert te
-                        verslepen wanneer je erop klikt).<br /><br /> 
+                        voordat je dit probeert. Zo begrijpt Snap<em>!</em> dat je niet een bezig bent sprite te
+                        verslepen wanneer je erop klikt.<br /><br /> 
                         <img class="indent"
                             src="../../afb/h2/l3/others/p1-o3.png">
                     </div>
-                    <div class="sidenote">Waarschijnlijk wil je het <img class="inline"
+                        <div class="sidenote">Waarschijnlijk wil je het <img class="inline"
                             src="../../afb/h2/l3/blocks/p1-b5.png" /> blok gebruiken, dat je kunt vinden in het
-                        Waarnemen-palet.</div>
+                        Waarnemen-palet.
+                        </div>
                     <img class="indent" src="../../afb/h2/l3/others/p1-o4.png">
                 </li>
             </ol>
@@ -89,7 +92,7 @@
             <ol start="4">
                 <li>
                     
-                    Bouw een predikaat dat zegt of een invoergetal tussen twee andere getallen staat, en test
+                    Bouw een predikaat dat zegt of een invoergetal tussen twee andere getallen staat. Test
                     het in verschillende gevallen.
                     <br />
                     <img class="indent" src="../../afb/h2/l3/others/p1-o5.png">
@@ -110,23 +113,23 @@
                                     src="../../afb/h2/l3/others/p1-o8.png" /> </li>
                             <li>Je moet het <img class="nopadtb" src="../../afb/h2/l3/blocks/p1-b6.png" />blok
                                 gebruiken om de resultaten van functies die iets moeten rapporteren te melden. Hier
-                                vallen predikaten ook onder.</li>
-                           
+                                vallen predikaten ook onder.</li><br />
+                            <div class="vocabFullWidth">
+                                    <p>Veel talen gebruiken <code>return</code> in plaats van <code>rapporteer</code>
+                                        als naam van het commando dat een waarde terug geeft aan het eind van een
+                                        functie.
+                                    </p>
+                            </div><br />
                         </ul>
                     </div>
                 </li>
-                    <div class="vocabFullWidth">
-                        <p>Veel talen gebruiken <code>return</code> in plaats van <code>rapporteer</code>
-                            als naam van het commando dat een waarde terug geeft aan het eind van een
-                            functie.
-                        </p>
-                    </div><br />
+                    
 
-                <li> Gebruik <code>tussen?</code> om een script te schrijven dat ervoor zorgt dat je met drie kleuren
-                    kunt schrijven in je speelveld (afhankelijk van je hoogte op het speelveld), gebruik je muis:<br /><br />
+                <li> Gebruik <code>tussen?</code> om een script te schrijven dat ervoor zorgt dat je met de muis met drie kleuren
+                    kunt schrijven, afhankelijk van je plek op het speelveld.<br /><br />
                 
-                    <div class="sidenote">Let op. Je letters zullen verbonden zijn tenzij je de tijd had om de
-                        niet-verbondenheid te coderen zoals genoemd bij punt 3.</div> 
+                    <div class="sidenote">Let op. Je letters zullen verbonden zijn, tenzij je 
+                        'niet-verbondenheid' codeerde, zoals genoemd bij punt 3.</div> 
                     <img class="indent" height="200"
                         data-gifffer="../../afb/h2/l3/videos/p1-v2.gif" alt="Geen Afbeelding" /><br />
                 </li>
@@ -137,8 +140,8 @@
                         <li>Experimenteer eerst met het <code>modulo</code>blok.
                             <ul>
                                 <li>Probeer verschillende invoeren.</li>
-                                <li>Laat het tweede getal als constante, en probeer verschillende
-                                    invoerwaardes voor het eerste getal.</li>
+                                <li>Houd het tweede getal constant, en probeer verschillende
+                                    invoerwaarden voor het eerste getal.</li>
                                 <li>Stel een hypothese op. Wat valt je op?</li>
                             </ul>
                         </li>
@@ -148,7 +151,7 @@
                                 tweede. <img height="40" src="../../afb/h2/l3/blocks/p1-b8.png" /> rapporteert
                                 bijvoorbeeld 2 omdat
                                 wanneer 17 wordt gedeeld door 5, er 2 overblijft.
-                                Wanneer een getal een ander getal geheel deelt, dan blijft er 0 over. Dus <img
+                                Wanneer een getal een ander getal gelijkmatig deelt, dan blijft er geen rest over. Dus <img
                                     height="40" src="../../afb/h2/l3/blocks/p1-b9.png" /> rapporteert 0.</p>
                         </div><br />
                         <li>Definieer nu het <img class="nopadtb" height="25" src="../../afb/h2/l3/blocks/p1-b10.png" />
