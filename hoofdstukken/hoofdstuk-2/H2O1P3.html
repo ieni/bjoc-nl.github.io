@@ -21,10 +21,11 @@
         <h2>Mastermind</h2>
 
         <div class="learn">
-            <strong>In dit project,</strong> ga je beginnen het spel Mastermind&#8482; bouwen. In dit spel kiest één
-            speler een reeks van vier geheime kleuren en de andere speler probeert ze te raden.
-            <br />
+            <strong>In dit project</strong> maak je een begin met het bouwen het spel Mastermind. In dit spel kiest een
+            speler een reeks van vier geheime kleuren en de andere speler probeert de positie van de kleuren te raden.
+            <br /><br />
             <img class="indent" src="../../afb/h2/o1/p3-o1.png" />
+            <br />
         </div>
 
         <div class="forYouToDo" id="first">
@@ -32,115 +33,90 @@
                 <li><a class="run"
                         href="https://snap.berkeley.edu/snap/snap.html#present:Username=cfkaligula&ProjectName=H2O1-mastermind-starter">
                         <img class="inline" src="../../afb/icons/LaadEnSlaOp.png"></a>
-                    <br />
-                    Kijk naar deze scripts. Er zijn zes sprites, vier voor de gissen van de speler en twee voor de
+                    <br /><br />
+                    Kijk naar deze scripts. Er zijn zes sprites, vier voor de keuzes van de speler en twee voor de
                     feedback.
                 </li>
                 <div class="narrower">
-                    <p><strong>Feedback aan de rader</strong> is twee getallen numbers (zoals hierboven te zien is in
-                        iedere rij van het spel)
-                        <ul>
-                            <li>hoeveel kleuren staan op de <em>correcte</em> plek? (Het doel van he spel is om ze alle
-                                vier op de goeie plek te hebben.)
+                    <p>Feedback aan de speler bestaat twee getallen, zoals hierboven te zien is in
+                        iedere rij van het spel:
+                        <ol>
+                            <li>Hoeveel kleuren staan op de <em>goede</em> plek? Het doel van het spel is om ze alle
+                                vier te raden.
 
                             </li>
-                            <li>Hoeveel correcte kleuren staan op de <em>verkeerde</em> plek?</li>
-                        </ul>
+                            <li>Hoeveel kleuren zijn wel aanwezig, maar staan op de <em>verkeerde</em> plek?</li>
+                        </ol>
                     </p>
                     <!--This is not included in the code. --MF
                     The first, "correct position," sprite has two short scripts: 
                     one to be used at the beginning of the game, and the other to be used when a guess is made.-->
-                </div>
+                </div><br />
                 <li>Speel een potje Mastermind met je partner <em>op papier</em>.</li>
                 <div class="narrower">
                     <h4><strong>Mastermindregels</strong></h4>
                     <ul>
-                        <li>
-                            <strong>Iedere speler moet een reeks van vier kleuren opschrijven</strong> zonder dat je
-                            partner het ziet.
-                            <ul>
-                                <li> Voor het gemak kan je de eerste letter van iedere kleur gebruiken in plaats van de
-                                    volledige naam: <strong><u>r</u></strong>ood, <strong><u>o</u></strong>ranje,
+                        <li> Iedere speler moet een reeks van vier kleuren noteren, uit zicht van de partner.<br />
+                           - Voor het gemak noteer je de eerste letter van iedere kleur in plaats van de volledige naam: <br />
+                                    <strong><u>r</u></strong>ood, <strong><u>o</u></strong>ranje,
                                     <strong><u>g</u></strong>eel, <strong><u>l</u></strong>ichtblauw,
-                                    <strong><u>b</u></strong>lauw, <strong><u>p</u></strong>aars. (Gebruik voor nu
-                                    iedere kleur maximaal één keer)
-                                </li>
-                            </ul>
+                                    <strong><u>b</u></strong>lauw, <strong><u>p</u></strong>aars. Gebruik voor nu iedere kleur maximaal één keer)
+                                
                         </li>
                         <li>
-                            <strong>Doe om de beurt een gis naar de kleuren van je partner</strong>. Geef na de gis van
-                            je
-                            partner twee getallen als feedback zoals hierboven beschreven staat.
-                            <ul>
-                                <li>Zijn bijvoorbeeld je geheime kleuren <strong>ropg </strong> en je partner gokt
-                                    <strong>gobp</strong> dan antwoord je "een en twee", omdat één kleur (oranje) op de
-                                    goeie plek staat en twee kleuren (paars en geel) in de reeks zitten maar niet op de
-                                    goeie plek staan.
-                                </li>
-                            </ul>
+                            Raad om de beurt elkaars kleurenreeks. <br />
+                           - Geef als feedback steeds twee aantallen, zoals hierboven beschreven. Zijn jouw geheime kleuren bijvoorbeeld <strong>ropg </strong> en je partner probeert <strong>gobp</strong>, dan antwoord je 1 en 2, omdat één kleur (oranje) op de goede plek staat en twee kleuren (paars en geel) in de reeks zitten maar niet op de goede plek staan.
                         </li>
                         <li>
-                            <strong>Gebruik de informatie van vorige gissen</strong> om je volgende gis te maken.
-                            <ul>
-                                <li> Na <strong>gobp</strong> denk je bijvoorbeeld misschien, "Één van mijn kleuren
-                                    staat op de goeie plek" en twee andere kleuren staan correct. Ik ga raden dat geel
-                                    op de goeie plek staat en oranje en blauw ergens anders in de lijst moeten. Een
-                                    goeie nieuwe gis zou dus zijn <strong>grob</strong> omdat geel op dezelfde plek
-                                    staat en oranje en blauw op een andere plek."
-
-                                    Je partner zal nu antwoorden "nul en drie", wat wellicht klinkt alsof je minder goed
-                                    hebt dan de vorige keer om dat er nu geen kleuren op de goeie plek staan. Dit is
-                                    niet zo, omdat je je nu zeker weet dat geel niet de kleur was die op de goeie plek
-                                    stond. Bij je volgende gis zet je misschien oranje op de tweede plek, enzovoort.
-                                </li>
-                            </ul>
+                            Gebruik steeds de informatie van de eerste poging in de tweede beurt. <br />
+                           - Na <strong>gobp</strong> denkt je partner misschien 'Één van mijn kleuren staat op de goeie plek en twee andere kleuren staan correct. Ik gok dat geel op de goeie plek staat en oranje en blauw ergens anders.' Een nieuwe poging zou dus <strong>grob</strong> kunnen zijn. Jouw feedback daarop is 0 en 3, wat misschien minder goed lijkt dan de eerste keer, omdat er nu geen kleuren op de goeie plek zouden staan, maar je partner weet nu zeker dat geel niet de kleur was die op de goeie plek stond. Bij de volgende poging is oranje op de tweede plek een goede keuze enzovoorts.
                         </li>
                     </ul>
-                </div>
-                <li> Je zal dit programma niet in deze les afmaken. Voor nu is het doel om de computer te gebruiken als
-                    notitieblok voor twee menselijke spelers om hun gissen en feedback op te schrijven:
+                </div><br />
+                <li> Je bouwt het Mastermind-programma in verschillende fases op in de loop van de cursus. Voor nu is het doel om de computer te gebruiken als notitieblok voor twee menselijke spelers om hun pogingen en de feedback daarop op te noteren:
                     <ul>
-                        <li> Vind de namen van de twee spelers zodat je bij kan houden wiens beurt het is.</li>
-                        <li> Vraag een speler om een gis te doen (met gebruik van vier letters zoals
-                            <strong>gobp</strong>).<img width="400" src="../../afb/h2/o1/p3-o2.png">
+                        <li> Vraag de namen van de twee spelers, zodat je bij kan houden wiens beurt het is.</li>
+                        <li> Vraag een speler om een poging te doen met gebruik van vier letters zoals
+                            <strong>gobp</strong>.<br /><br />
+                            <img width="400" src="../../afb/h2/o1/p3-o2.png"><br /><br />
                         </li>
-                        <li> Laat de gis zien op het scherm.<img src="../../afb/h2/o1/p3-o3.png"></li>
-                        <li> Vraag de andere speler voor feedback in de vorm van twee getallen.
+                        <li> Laat de poging zien op het scherm.<img src="../../afb/h2/o1/p3-o3.png"></li>
+                        <li> Vraag de andere speler om feedback in de vorm van twee getallen.<br /><br />
                             <img width="400" src="../../afb/h2/o1/p3-o4.png">
                             <br />
                             <img width="150" src="../../afb/h2/o1/p3-o5.png">
-                        </li>
-                        <li> Blijf dit herhalen tot de rader het correcte antwoord geeft.</li>
+                        </li><br />
+                        <li> Blijf dit herhalen tot de eerste speler het correcte antwoord geeft.
+                        </li><br />
                     </ul>
                     <div class="endnote">
-                        Je zal het handig vinden voor een script om te zeggen wat een bepaalde sprite moet doen. Daar is
-                        een blok voor: het <img height="70" src="../../afb/h2/o1/p3-b1.png">blok.
-                        <br />
+                        Het is handig als een script een bepaalde sprite kan vertellen wat hij moet doen. <br /><br />
+                        Daar is een blok voor:  <img height="70" src="../../afb/h2/o1/p3-b1.png">
+                        <br /><br />
                         Bijvoorbeeld:
-                        <img height="90" src="../../afb/h2/o1/p3-b2.png">
+                        <img height="90" src="../../afb/h2/o1/p3-b2.png"> of 
                         <img height="90" src="../../afb/h2/o1/p3-b3.png">
                     </div>
-                </li>
+                </li><br />
                 <li>
                     <div class="saveAs"><span class="text">"H2-Mastermind"</span><img
                             src="../../afb/icons/SlaHetOpAls.png" /></div>
-                </li>
+                </li><br />
             </ol>
         </div>
 
         <div class="takeItFurther">
             <ol type="A">
-                <li> In plaats van dat je de rader vraagt om vier letters, kan je zes gekleurde knoppen hebben die de
-                    rader in een bepaalde volgorde indrukt. Om dit te doen maak je zes sprites, ieder met een andere
-                    kleur. Zet ze aan de zijkant van het speelveld zodat ze niet verward worden met de opgeslagen
-                    gissen. Je hebt ook een "wis"-sprite nodig met het ⌫-teken als uiterlijk en een "OK"-sprite met een
-                    ✓-teken als uiterlijk. Zorg ervoor dat de knoppen het speelveld correct aanpassen.
+                <li> In plaats van dat je de speler om vier letters vraagt, kan je ook zes gekleurde knoppen maken die de
+                    speler in een bepaalde volgorde zet. Om dit te doen maak je zes sprites, ieder met een andere
+                    kleur. Zet ze aan de zijkant van het speelveld, zodat ze niet verward worden met de opgeslagen
+                    pogingen. Je hebt ook een 'wis'-sprite nodig met het ⌫-teken als uiterlijk en een 'OK'-sprite met een
+                    ✓-teken als uiterlijk. Zorg ervoor dat deze knoppen het scherm op de juiste manier bijwerken.
 
                 </li>
-                <li> Zorg dat beide speler geheime kleurenreeksen hebben en dat ze om de beurt mogen raden. Let both
-                    players have secret color sequences, Je zal een extra kolom moeten toevoegen aan de rechterkant van
-                    het speelveld en een tweede set sprites voor de knoppen. Het spel stopt als een van de speler de
-                    reeks van de ander raadt.
+                <li> Laat beide spelere geheime kleurenreeksen maken en laat ze om de beurt elkaars reeks raden. Je moet een 
+                    tweede kolom voor pogingen toevoegen aan de rechterkant van het speelveld en een tweede set sprites. 
+                    Het spel eindigt als een van beide spelers het goed heeft.
                 </li>
             </ol>
         </div>
