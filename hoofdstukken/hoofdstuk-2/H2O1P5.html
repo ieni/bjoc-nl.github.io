@@ -19,98 +19,95 @@
 <body>
     <div class="full">
         <h2>Taal modeleren: Meervoudsvormen, deel 2</h2>
-        <p> Je kan <code>meervoud</code> verbeteren door voor meer woorden te werken. Als je het project nog niet open
-            hebt staan, zorg daar dan voor. (De projectnaam is als het goed is <code>H2-Meervoud</code>.)
-        </p>
+        <p> We gaan <code>meervoud</code> bewerken zodat het correct werkt met meer woorden. Als het project nog niet geopend is, laad het dan opnieuw.
+            De projectnaam is als het goed is <code>H2-Meervoud</code>.
+        </p><br />
 
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
-                    <strong>Abstractie: </strong> Maak een <img height="35" src="../../afb/h2/o1/p5-b1.png"> dat werkt
-                    voor één
-                    categorie woorden,
-                    woorden die eindigen op de letter <strong>h</strong>.
+                    <strong>Abstractie: </strong> Maak een <img height="35" src="../../afb/h2/o1/p5-b1.png">blok dat gespecialiseerd is 
+                    in één categorie: woorden die eindigen op de letter 'h'.
 
                     <ul>
-                        <li> Start met een <code>lijst</code> met woorden waarvan je wil dat het correct het meervoud
-                            kan
-                            geven.</li>
-                        <li> Dit gespecialiseerde blok zou moeten werken voor alle woorden van zijn specialiteit
+                        <li> Begin met een <code>lijst</code> van de woorden waarvoor je wilt dat het werkt.
+                        </li>
+                        <li> Dit gespecialiseerde blok zou moeten werken voor alle woorden die binnen zijn specificatie passen.
                             <img height="45" src="../../afb/h2/o1/p5-b2.png">,
                             <img height="45" src="../../afb/h2/o1/p5-b3.png">,
-                            <img height="45" src="../../afb/h2/o1/p5-b4.png">,
-                            omdat het <code>meervoud</code>blok nooit een woord aan
-                            <code>meervoud-h</code> geeft behalve als dat woord eindigt op een <strong>h</strong>.
+                            <img height="45" src="../../afb/h2/o1/p5-b4.png">,<br /><br />
+                            (En het mag er helemaal naast zitten voor woorden die niet binnen deze specificatie passen.)<br /><br />
+
                         </li>
-                        <li> Test <img height="35" src=" ../../afb/h2/o1/p5-b1.png"> met een verschillende groep woorden
-                            om zeker te weten dat hij doet wat je wil. Gebruik daarna <code>map</code> om op de hele
-                            <code>lijst</code> te testen
-                            die je al gemaakt hebt bij de vorige pagina.
+                        <li> Test <img height="35" src=" ../../afb/h2/o1/p5-b1.png"> met een verschillende woorden
+                            om zeker te weten dat het werkt zoals je wilt. Gebruik daarna <code>map</code> om op de hele
+                            <code>lijst</code> te testen op de hele lijst die je eerder hebt gemaakt.
                         </li>
                     </ul>
 
                 </li>
-                <div class="takeNote">
-                    <p><strong>Abstractie: </strong> Taal heeft vaak uitzonderingen. In het Engels eindigen de
-                        meervoudsvormen van sommige woorden op <em>s</em>, sommige op <em>es</em> en woorden zoals
-                        <em>calf</em> en <em>fly</em> worden <em>calves</em> en <em>flies</em>, waarbij hun laatste
-                        letter verandert voordat <em>es</em> wordt toegevoegd. Er zijn zo nog veel meer uitzonderingen.
-                        Voor een programmeertaak zo complex als deze, is het vaak een goed idee om het probleem op de
-                        breken in stukjes. We maken voor ieder probleemstukje zijn eigen gespecialiseerde blok en een
-                        special "manager"-blok maakt dan gebruik van die gespecialiseerde blokken. In dit geval is dit
-                        managerblok <code>meervoud</code>. In plaats van dat we dus iedere uitzondering direct in
-                        <code>meervoud</code> bouwen, is het veel overzichtelijker en opgeruimder om
-                        <code>meervoud</code> er ongeveer zo uit te laten zien.
-                        <br>
-                        <img class="indent" height="300" src="../../afb/h2/o1/p5-b6.png">
-                        <br>
-                        De <em>structuur</em> van een methode laten zien, eigenlijk de strategie, in het managerblok en
-                        de details overlaten aan aparte blokken is deel van een belangrijk begrip binnen de informatica
-                        genaamd <strong>abstractie</strong>. Abstractie houdt je code overzichtelijk, leesbaar en
-                        makkelijker te debuggen. Het maakt je code ook flexibeler.
+                <div class="endnote">
+                    <p><strong>Abstractie: </strong> Taal kent veel uitzonderingen. In het Engels eindigen de meervoudsvormen 
+                        van sommige woorden op <em>s</em>, sommige op <em>es</em> en woorden zoals <em>calf</em> en <em>fly</em> 
+                        worden <em>calves</em> en <em>flies</em>, waarbij hun laatste letter verandert voordat <em>es</em> wordt 
+                        toegevoegd. 
                     </p>
-                </div>
-                <li> Als je je nieuwe gespecialiseerde blok vertrouwt, pas dan <code>meervoud</code> aan om dit blok te
-                    gebruiken. Test of <code>meervoud</code> nog steeds werkt voor alle woordeen waar het voorheen voor
-                    werkte en ook voor de nieuwe woorden. Je kan voor het testen <code>map</code> gebruiken.
+                    <p>
+                        Zo zijn er nog veel meer uitzonderingen. Voor een programmeertaak zo complex als deze, is het vaak een goed 
+                        idee om het probleem te splitsen in delen. We maken voor ieder deelprobleem een eigen procedure, in 
+                        een gespecialiseerd blok. Een 'top-level'-blok erboven maakt dan gebruik van alle gespecialiseerde blokken. 
+                    </p>
+                    <p>
+                        In dit geval is het top-level-blok <code>meervoud</code>. In plaats van iedere uitzondering direct 
+                        in het blok in te bouwen, is het netter en overzichtelijker om het <code>meervoud</code>blok er ongeveer zo uit 
+                        te laten zien:
+                        <br /><br />
+                        <img class="indent" height="300" src="../../afb/h2/o1/p5-b6.png">
+                        <br /><br />
+                    </p>
+                        Het tonen van de structuur van een methode laten zien, ofwel de strategie, in het top-level-blok en
+                        de details overlaten aan aparte blokken is deel van het belangrijke informatica-idee dat abstractie heet. In Hoofdstuk 2 Les 4, pagina 3 <a href="../../hoofdstukken/hoofdstuk-2/H2L4P3.html">Bakstenen</a> had je al eerder even kennis gemaakt 
+                        met het begrip abstractie. Abstractie houdt je code overzichtelijk, leesbaar en makkelijker te debuggen. Het maakt je code ook flexibeler.
+                    </p>
+                </div><br />
+                <li> Als je je nieuwe gespecialiseerde blok vertrouwt, voeg het dan toe aan het <code>meervoud</code>. Test of 
+                    <code>meervoud</code> zowel werkt voor de nieuwe, als voor de oude woorden. Je kan voor het testen <code>map</code> gebruiken.
                 </li>
-                <li> Maak <code>meervoud-y</code> om woorden zoals
+                <li> Maak een <code>meervoud-y</code>blok om woorden zoals<br />
                     <img height="45" src="../../afb/h2/o1/p5-b7.png"> en
                     <img height="45" src="../../afb/h2/o1/p5-b8.png"> aan te kunnen.
-                </li>
+                </li><br />
                 <p> Onthoud dat een specialist fouten maakt als hij een taak krijgt waarin hij niet gespecialiseerd
                     is. <img height="45" src="../../afb/h2/o1/p5-b9.png">
                 </p>
                 <p> Zorg dat <code>meervoud</code> alleen taken geeft aan <code>meervoud-y</code> die het aankan.
-                </p>
-                <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" />
-            </ol>
+                </p><br /><br />
+            </ol> <img class="imageLeft" src="../../afb/icons/HetIsNuEenGoedMoment.png" />
+            <br /><br /><br />
         </div>
-
 
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li> Omdat je weet wat <img height="80" src="../../afb/h2/o1/p4-b15.png" alt="Geen Afbeelding"> doet,
-                    kan je, als je wil, alleen de gespecialiseerde lijst als invoer gebruiken om <code>meervoud</code>
-                    of <code>meervoud-h</code> te testen. Op deze manier:
-                    <img height="100" src="../../afb/h2/o1/p5-b10.png" alt="Geen Afbeelding">
-                </li>
+                <li> Omdat je weet wat dit blok doet <img height="80" src="../../afb/h2/o1/p4-b15.png" alt="Geen Afbeelding"> <br />
+                    kan je alleen de gespecialiseerde lijst als invoer gebruiken om <code>meervoud</code>
+                    of <code>meervoud-h</code> te testen. Doe het op deze manier:
+                    <img height="120" src="../../afb/h2/o1/p5-b10.png" alt="Geen Afbeelding">
+                </li><br />
                 <li> Breid <code>meervoud</code> uit om met nog een uitzondering om te gaan. Je mag zelf bedenken welke.
-                    Gebruik een gespecialiseerd blok voor deze uitzondering zodat <code>meervoud</code> netjes blijft.
-                </li>
-                <li> Als <code>meervoud</code> nu een woord krijgt met een spatie aan het einde, blijft die spatie in
-                    het de meervoudsvorm, zoals dit: d<img height="45" src="../../afb/h2/o1/p5-b11.png">.
+                    Gebruik een nieuw gespecialiseerd blok voor deze uitzondering zodat <code>meervoud</code> netjes blijft.
+                </li><br />
+                <li> Als <code>meervoud</code> een woord te verwerken met een spatie aan het einde, blijft die spatie staan in
+                     de meervoudsvorm: <img height="45" src="../../afb/h2/o1/p5-b11.png">.<br />
 
-                    Vind een manier om dit op te lossen zodat het resultaat <img height="45"
-                        src="../../afb/h2/o1/p5-b12.png"> is. Je hebt al een blok dat <em>gespecialiseerd</em> is in
-                    meervoudsvormen van woorden die <em>niet</em> op een spatie eindigen. <em>Gebruik die</em>.
+                    Zoek een manier om dit netjes op te lossen: <img height="45" src="../../afb/h2/o1/p5-b12.png">. <br /><br />
+                    
+                    Je hebt al een blok dat gespecialiseerd is in meervoudsvormen van woorden die <em>niet</em> op een spatie eindigen. <em>Gebruik dat</em>.
 
+                </li><br />
+                <li> Verrassing! Als <code>meervoud</code> eenmaal correct werkt met een enkele spatie op het
+                    eind, probeer dan eens <img height="35" src="../../afb/h2/o1/p5-b13.png"> in te voeren. Werkt dat ook meteen? Waarom wel of niet?
                 </li>
-                <li> <strong>Verrassing!</strong> Als <code>meervoud</code> eenmaal werkt met een enkele spatie op het
-                    einde, probeer dan eens <img height="35" src="../../afb/h2/o1/p5-b13.png"> uit te voeren. Werkt dat
-                    ook meteen? Zo ja, waarom?! Zo niet, probeer dan te zorgen dat het ook werkt.
-                </li>
-            </ol>
+            </ol><br />
             <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" />
         </div>
     </div>
