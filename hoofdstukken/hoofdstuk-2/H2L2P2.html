@@ -21,31 +21,31 @@
         <h2>Abstracte datatypes</h2>
 
         <div class="learn">
-            <strong>Op deze pagina</strong> ga je een abstract data-type genaamd <code>punt</code> maken.
+            <strong>Op deze pagina</strong> ga je een abstract datatype genaamd <code>punt</code> maken.
             Hiermee maak je je eigen H2L2-TekenVorm-code aangenamer om te lezen, te debuggen en te gebruiken:
-            <br />
-            <img class="indent" src="../../afb/h2/l2/blocks/p2-b1.png" height="115" alt="Geen Afbeelding" />
+            <br /><br />
+            <img class="indent" src="../../afb/h2/l2/blocks/p2-b1.png" height="115" alt="Geen Afbeelding" /><br /><br />
         </div>
 
         <p>
-            De naam zegt het al, een <strong>data-type</strong> is get soort data dat iets is (getal, tekst /
-            tekens, lijst, etc.). Elke programmeertaal heeft <strong>primitieve</strong> <strong>data-types</strong>,
-            dit zijn de data-types die standaard ingebouwd zitten in de taal. Snap<em>!</em> heeft als standaard
-            data-types onder andere getallen, tekst (woorden en zinnen), lijsten, functies en meer.
+            De naam zegt het al, een <strong>datatype</strong> is get soort data dat iets is (getal, tekst /
+            tekens, lijst, etc.). Elke programmeertaal heeft <strong>primitieve</strong> <strong>datatypes</strong>,
+            dit zijn de datatypes die standaard ingebouwd zitten in de taal. Snap<em>!</em> heeft als standaard
+            datatypes onder andere getallen, tekst (woorden en zinnen), lijsten, functies en meer.
             <br />
 
             <div class="endnote">
-                Het keuzemenu van dit <code>is .. een ..</code>blok toont alle tien de primitieve data-types van Snap<em>!</em>
+                Het keuzemenu van dit <code>is .. een ..</code>blok toont alle tien de primitieve datatypes van Snap<em>!</em>
             </div>
 
             <img class="indent" src="../../afb/h2/l2/other/p2-o1.png" alt="Geen Afbeelding" />
         </p>
         <div class="takeNote">
-            <p>Een <strong>abstract data-type</strong> (of <strong>ADT</strong>) is een data-type dat nodig is
+            <p>Een <strong>abstract datatype</strong> (of <strong>ADT</strong>) is een datatype dat nodig is
                 voor je programma, maar niet ingebouwd zit in de programmeertaal. Je bouwt dit terwijl je
                 programmeert.
             </p>
-            <p> In deze les bijvoorbeeld, maak je een <em>punt</em> data-type met: 
+            <p> In deze les bijvoorbeeld, maak je een <em>punt</em> datatype met: 
                 <ul>
                     <li><img class="inline" src="../../afb/h2/l2/blocks/p2-b9.png" alt="Geen Afbeelding"> voor het
                         <em>bouwen</em> van de ADT.</li>
@@ -72,30 +72,25 @@
                     pagina</a> over het gebruik van lijsten met coördinaten om een letter te tekenen.
             </div>
 
-            <div>
-                <span>Yasmine:</span> 'Ik keek naar ons
+            <div> &emsp; <span>Yasmine:</span> 'Ik keek naar ons
                 <img class="inline" src="../../afb/h2/l2/blocks/p2-b4.png" alt="Geen Afbeelding">blok
                 en bedacht een manier om dit leesbaarder te maken.'
             </div>
 
-            <div>
-                <span>Bo:</span> 'Ja, expressies zoals
+            <div> &emsp; <span>Bo:</span> 'Ja, expressies zoals
                 <img class="inline" src="../../afb/h2/l2/blocks/p2-b5.png" alt="Geen Afbeelding" />
                 zijn moeilijk te lezen. Zelfs nadat ik het had geschreven en gebruikte om de <em>y</em> coördinaat te
                 vinden, moest ik twee keer nadenken voordat ik het snapte.'
             </div>
             
-            <div>
-                <span>Yasmine:</span> 'Dat bedoel ik dus! Laten we het wat duidelijker maken. We kunnen een
+            <div>  &emsp; <span>Yasmine:</span> 'Dat bedoel ik dus! Laten we het wat duidelijker maken. We kunnen een
                 <img class="inline" src="../../afb/h2/l2/blocks/p2-b6.png" alt="Geen Afbeelding">
                 blok definiëren en dat gebruiken, in plaats van <code>item 2 van</code>.'
             </div>
-            <div>
-                <span>Bo:</span> 'Maar dat blok zou precies hetzelfde doen als <code>item 2 van</code>, dus wat
+            <div> &emsp; <span>Bo:</span> 'Maar dat blok zou precies hetzelfde doen als <code>item 2 van</code>, dus wat
                 is daar het nut van? Dat zal het programma niet korter maken.'
             </div>
-            <div>
-                <span>Yasmine:</span> 'Ja, maar het maakt het programma wel leesbaarder en makkelijker om over na
+            <div> &emsp; <span>Yasmine:</span> 'Ja, maar het maakt het programma wel leesbaarder en makkelijker om over na
                     te denken. We kunnen <code>x-coördinaat</code> en <code>y-coördinaat</code> gebruiken in
                 plaats van <code>item van</code> als invoer voor het <code>ga naar</code> blok.'
             </div>
@@ -103,33 +98,33 @@
                 Yasmine doet een suggestie voor <strong>data-abstractie</strong>: een nieuwe ADT maken
                 om de details te verbergen. Wanneer je de <code>punt</code> ADT gebruikt, hoef je verder niet na te
                 denken over hoe punten worden weergegeven als <em>lijst</em>.
-            </div>
+            </div><br />
             <div class="stagedir"> Ze bouwen twee blokken:
                 <img height="100" src="../../afb/h2/l2/blocks/p2-b7.png" alt="Geen Afbeelding">
                 en
                 <img height="100" src="../../afb/h2/l2/blocks/p2-b8.png" alt="Geen Afbeelding">
 
-            </div>
+            </div><br />
 
-            <div>
-                <span>Bo:</span> 'Hm... en als we nu een
+            <div> &emsp; <span>Bo:</span> 'Hm... en als we nu een
                 <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b9.png" alt="Geen Afbeelding" /> blok
                 maken, dan kunnen we <img height="70" src="../../afb/h2/l2/blocks/p2-b10.png" alt="Geen Afbeelding">
-                schrijven in plaats van <img height="60" src="../../afb/h2/l2/blocks/p1-b1.png" alt="Geen Afbeelding">. <br />
+                schrijven in plaats van <img height="60" src="../../afb/h2/l2/blocks/p1-b1.png" alt="Geen Afbeelding">. 
+                <br /><br />
                 Op die manier is het veel duidelijker dat het een lijst met punten is.'
             </div>
 
             <div class="stagedir">
                 Bo bouwt dit blok. Ze markeert de invoervariabelen <var>x</var> en <var>y</var> als
                 getallen.
-                <br />
+                <br /><br />
                 <img height="100" src="../../afb/h2/l2/blocks/p2-b11.png" alt="Geen Afbeelding" />
-            </div>
+            </div><br />
 
             <div class="endnote">
                 Typ geen <code>#</code> in de invoernaam van <code>punt</code> blok.
                 Net zoals het <code>⋮</code> symbool bij een lijst als invoer, is <code>#</code>
-                geen onderdeel van de naam, maar een <strong>type-hint</strong> die je maakt wanneer je het invoer-type 
+                geen onderdeel van de naam, maar een <strong>type-hint</strong> die je maakt wanneer je het invoertype 
                 <em>getal</em> selecteert:
                 <img src="../../afb/h2/l2/other/p2-o2.png" height="80" alt="Geen Afbeelding" />
                 <br />
@@ -139,15 +134,15 @@
         </div>
 
         <div class="takeNote">
+            <h4><strong>Bouwer en selector</strong></h4>
             Het
             <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b9.png" alt="Geen Afbeelding" />blok wordt de
-            <strong>bouwer</strong> genoemd van het nieuwe abstracte data-type <code>punt</code>.
-
-            De <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b2.png" height="35"
-                alt="Geen Afbeelding">- en
-            <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b3.png" alt="Geen Afbeelding" />blokken
-            worden de <strong>selectors</strong> genoemd, omdat ze ieder een
-            component <em>selecteren</em> van een punt.
+            <strong>bouwer</strong> genoemd van het nieuwe abstracte datatype <code>punt</code>.
+            <br /><br />
+            Het <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b2.png" height="35"
+                alt="Geen Afbeelding">-blok en het 
+            <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b3.png" alt="Geen Afbeelding" />-blok zijn ieder een
+            <strong>selector</strong>. Ze  selecteren ieder een component van een punt.
         </div>
 
         <div class="forYouToDo" id="first">

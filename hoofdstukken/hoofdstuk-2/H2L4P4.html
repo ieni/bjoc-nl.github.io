@@ -20,26 +20,25 @@
     <div class="full">
         <h2>Boter, kaas en eieren bouwen</h2>
         <div class="learn">
-            <p> <strong>In dit project</strong> ga je een programma schrijven dat net zo goed Boter-kaas-en-eieren kan
+            <p> <strong>In dit project</strong> schrijf je een programma dat net zo goed Boter-kaas-en-eieren kan
                 spelen als jij.
             </p>
-            <p> <strong>Op deze pagina</strong> ga je het bord tonen en zullen twee menselijke spelers zetten
-                doen.
+            <p> <strong>Op deze pagina</strong> maak je het bord en gaan twee menselijke spelers zetten doen.
             </p><br />
             <img height="200" class="indent" src="../../afb/h2/l4/other/p4-o1.png" /><br /><br />
         </div>
         <p> Een manier om deze game te bouwen is om <em>meerdere sprites</em> te gebruiken; ieder vierkant van het bord
-            is een aparte sprite. Iedere sprite weet waar hij staat op het bord en, eenmaal geplaatst, zal de sprite
+            is een aparte sprite. Iedere sprite weet waar hij staat op het bord en eenmaal geplaatst, zal de sprite
             nooit meer bewegen. De speler klikt op een van de negen vierkanten en dat vierkant verandert dan zijn
             uiterlijk om de zet weer te geven.
         </p>
 
         <div class="forYouToDo" id="first">
             <ol>
-
-                <li> <a class="run"
+            <a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H2L4-BoterKaasEnEieren"
-                        target="_blank"> <img class="inline" src="../../afb/icons/LaadEnSlaOp.png" /> </a> </li>
+                        target="_blank"> <img class="inline" src="../../afb/icons/LaadEnSlaOp.png" /> </a><br /><br />
+
                 <li> De eerste sprite is al voor je klaargezet. Hij heeft 3 uiterlijken: Leeg, X en O. Klik
                     een paar keer op het <img height="40" class="inline" src="../../afb/h2/l4/blocks/p4-b4.png" />blok
                     om ze allemaal te zien.
@@ -56,15 +55,14 @@
             <p> Een <strong>kloon</strong> is een kopie van een sprite die <em>informatie deelt</em> met zijn
                 sprite-ouder (de originele sprite). Klonen hebben bijvoorbeeld kopieën van alle scripts van de ouder en
                 als het script van de ouder veranderd wordt, dan verandert het script van de kloon ook. Maar
-                veranderingen van een kloon worden <em>niet</em> gedeeld met de ouder, dus je kan bijvoorbeeld dingen
-                doen zoals iedere kloon op een apare positie zetten.
+                veranderingen van een kloon worden <em>niet</em> gedeeld met de ouder, je kan dus bijvoorbeeld iedere kloon op een andere positie zetten.
             </p>
-        </div>
+        </div><br />
         <p>
             Klonen starten met dezelfde positie, uiterlijken en scripts als hun ouder. Maar ze...
             <ul>
-                <li>Verschijnen <em>niet</em> in het sprite-scherm.</li>
-                <li>Zijn <em>tijdelijk</em>. Als er op de stopknop gedrukt wordt zullen alle klonen verwijderd
+                <li>verschijnen <em>niet</em> in het sprite-scherm.</li>
+                <li>zijn <em>tijdelijk</em>. Als er op de stopknop gedrukt wordt zullen alle klonen verwijderd
                     worden.</li>
             </ul><br />
 
@@ -86,29 +84,29 @@
         </p><br />
 
         <div class="forYouToDo">
-            <ol start="3">
+            <ol start="2">
                 <li>
-                    Bekijk dit demonstratiescript over de werking van klonen, samen met je partner. Het script maakt verder 
-                    geen deel uit van het echte project.<br /><br />
-                    Bespreek vooraf wat er zal gebeuren wanneer je op de sprite klikt. 
+                    Bestudeer dit demonstratiescript over de werking van klonen, samen met je partner. Het script maakt verder 
+                    geen deel uit van het echte project. Bespreek vooraf wat er zal gebeuren wanneer je op de sprite klikt. 
                     <br /><br />
 
                     <img height="200" class="indent" src="../../afb/h2/l4/blocks/p4-b7.png">
 
                 </li><br />
                 <li>
-                    Klik dan op de sprite op het speelveld en vergelijk wat er gebeurt met wat je verwacht had.
+                    Klik dan op de sprite in het speelveld en bekijk of er gebeurt wat je verwacht had.
                         <ul>
                             <li>Merk op hoe de ouder-sprite (niet de kloon) naar nieuwe willekeurige posities beweegt
                                 nadat hij zichzelf heeft gekloond. Kijk naar de code; waarom is dit logisch?
                             </li>
                             <li>Bedenk dat de klonen <em>en</em> hun ouder allebei <em>sprites zijn</em>. Je kan op ze
                                 klikken en ze verslepen (probeer dit maar eens). Dit is anders dan wanneer je een
-                                <code>stempel</code>blok van het Pen-palet gebruikt, deze laat alleen een plaatje van
+                                <code>stempel</code>blok van het Pen-palet gebruikt. Deze laat alleen een plaatje van
                                 de sprite achter op het speelveld.
                             </li>
                             <li>Het <code>maak kloon</code>blok heeft een invoer nodig, omdat het <em>elke</em> sprite kan 
-                                kopiëren. In dit project, is er aanvankelijk maar één sprite, dus je kunt kiezen tussen <var>mijzelf</var> of <var>Vierkant</var> (de naam van de sprite), wat in dit geval hetzelfde is.
+                                kopiëren. In dit project is er aanvankelijk maar één sprite, je kunt dus kiezen tussen <var>mijzelf</var> 
+                                of <var>Vierkant</var> (de naam van de sprite), wat in dit geval hetzelfde is.
                             </li>
                         </ul><br />
                 </li>
@@ -128,14 +126,14 @@
                     </li>
                     <li>
                     Als je klikt op <img class="inline" src="../../afb/icons/stop_button.png" /> worden de
-                    klonen ook automatisch verwijderd, maar met het script hierboven heb je meer zekerheid in het geval dat je
-                    het programma meerdere keren uitvoert zonder op stop te klikken.
+                    klonen ook automatisch verwijderd, maar met het script hierboven heb je meer zekerheid (voor het geval je
+                    het programma meerdere keren uitvoert zonder op stop te klikken).
                     </li>
                 </ul>              
         </p><br />
 
         <div class="forYouToDo">
-            <ol start="5">
+            <ol start="4">
                 <li>
                     Voorbereidende stappen:
                     <ol>
@@ -149,19 +147,19 @@
 
                         <li> Lees het script en merk op dat...
                                 <ul type="circle">
-                                    <li> Het <code>wacht</code>blok ervoor zorgt dat het <em>andere</em>
+                                    <li> het <code>wacht</code>blok ervoor zorgt dat het <em>andere</em>
                                         <code>wanneer</code> <span style="color:green">⚑</span> <code>wordt
                                             aangeklikt</code>blok tijd heeft om de oude klonen te verwijderen voordat we
                                         nieuwe klonen maken.
                                     </li>
-                                    <li> Het <code>maakBord</code>blok leeg is. Je gaat dit schrijven bij stap 6. 
+                                    <li> het <code>maakBord</code>blok leeg is. Je gaat dit schrijven bij stap 6. 
                                     </li>
-                                    <li> De variabele <var>X'beurt</var> is <code>waar</code> wanneer X aan de beurt is, 
+                                    <li> de variabele <var>X'beurt</var> is <code>waar</code> wanneer X aan de beurt is, 
                                         en <code>onwaar</code> wanneer O aan de beurt is.
                                     </li><br />
                                 </ul>
                                 <div class="endnote">
-                                Wanneer je moet schakelen tussen twee waardes, dan is het handig om booleans te gebruiken. 
+                                Wanneer je moet schakelen tussen twee waardes, dan is het handig om booleans te gebruiken. <br />
                                 Ten eerste kan je het <code>niet</code>blok gebruiken om de waarde om te  wisselen van 
                                 <code>waar</code> naar <code>onwaar</code> en vice versa. Ten tweede kan je <code>als</code> 
                                 gebruiken om de variabele te testen. <br />Vergeet niet dat <code>als</code> een invoer van
@@ -225,11 +223,11 @@
 
                 <div class="endnote">
                     <p>
-                    In <a href="../hoofdstuk-3/H3L2P1.html">Hoofdstuk 3 Les 2 Pagina 1</a> 'De zetten onthouden' ga je verder met dit programma. <br />Voeg voor later eventuele opmerkingen toe aan je project per blok, via een rechtermuisklik en de optie 'opmerking toevoegen'.
+                    In Hoofdstuk 3 Les 2 Pagina 1 <a href="../hoofdstuk-3/H3L2P1.html">'De zetten onthouden'</a> ga je verder met dit programma. <br />Voeg voor later eventuele opmerkingen toe aan je project per blok, via een rechtermuisklik en de optie 'opmerking toevoegen'.
                     </p>
                 </div><br />
 
-                <li><img class="inline" src="../../afb/icons/SlaOpLater.png" /></li>
+                <img class="inline" src="../../afb/icons/SlaOpLater.png" /><br /><br />
             </ol>
         </div>
     </div>

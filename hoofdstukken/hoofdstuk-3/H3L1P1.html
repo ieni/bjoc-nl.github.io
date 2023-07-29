@@ -23,7 +23,7 @@
             <p><strong>In deze les</strong> ga je een Contactenlijst database app maken.</p>
             <p>
                 <strong>Op deze pagina</strong> ga je een <strong>abstract datatype</strong> maken om
-                <em>contactgegevens</em> zoals naam, adres, telefoonnummer, etc. op te slaan en te gebruiken.
+                contactgegevens (naam, adres, telefoonnummer etc.) op te slaan en te gebruiken.
 
             </p>
         </div>
@@ -38,114 +38,119 @@
                             class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
                 </li>
                 <li>Maak een globale variabele genaamd <var>contactenlijst</var>.</li>
+                <div class="endnote">
+
+                    Je hebt geleerd over <strong>globale variabelen</strong> in Hoofdstuk 2 Les 1 Pagina 3: <a
+                        href="../hoofdstuk-2/H2L1P3.html">De Score Bijhouden met
+                        Globale Variabelen</a>.
+    
+                </div>
                 <li>Initialiseer <var>contactenlijst</var> als een lege lijst.</li>
             </ol>
         </div>
         <div class="takeNote">
             <h4><strong>Waarom globaal?</strong></h4>
-
-            <div class="sidenoteBig">
-                Daarnaast worden in Snap<em>!</em> alleen waardes van globale variabelen opgeslagen,
-                wanneer het project opgeslagen wordt.
-            </div>
-
-            <strong>Meerdere scripts</strong> door het hele programma heen <strong>gaan deze lijst gebruiken</strong>,
-            dus is het niet logisch om het aan maar één script vast te maken als een lokale variabele.
+            <ul>
+                <li>
+                    Meerdere scripts in het project gaan deze contactenlijst gebruiken. De lijst moet dus niet aan slechts één script worden gekoppeld zoals een lokale variabele.
+                </li>
+                <li>
+                    In Snap<em>!</em> slaan alleen globale variabelen hun gegevens op, wanneer het project wordt opgeslagen.
+                </li>
+            </ul>
         </div>
 
         <h3>Het maken van het abstracte datatype</h3>
         <div class="dialogue">
-            <div class="stagedir">Robin en Yasmine zijn van plan een contactenlijst te maken in Snap<em>!</em>.</div>
-            <div><span>Robin:</span> "We hebben een manier nodig om een contact toe te voegen aan onze
-                <var>contactenlijst</var>."</div>
-            <div><span>Yasmine:</span> "Elk contact zal een lijst worden met iemands naam, telefoonnummer, adres en
-                e-mailadres."
+            <div class="stagedir">Robin en Yasmine zijn van plan een <em>contactenlijst</em> te maken in Snap<em>!</em>.</div>
+            <div> &emsp; <span>Robin:</span> 'We hebben een manier nodig om een contact toe te voegen aan onze
+                <var>contactenlijst</var>.'</div>
+            <div> &emsp; <span>Yasmine:</span> 'Elk contact zal een lijst worden met iemands naam, telefoonnummer, adres en
+                e-mailadres.'
             </div>
-            <div><span>Robin:</span> "In Hoofdstuk 2 hebben we een <a href="../hoofdstuk-2/H2L2P2.html"> abstract
+            <div> &emsp; <span>Robin:</span> 'In Hoofdstuk 2 Les 2 Pagina 2 hebben we een <a href="../hoofdstuk-2/H2L2P2.html"> abstract
                     datatype</a> <code>punt</code> gemaakt om de coördinaten van ieder punt in een lijst van punten op
                 te slaan. Nu kunnen we een abstract datatype <code>contact</code> maken om de data voor ieder contact in
-                onze contactenlijst in op te slaan."
+                onze contactenlijst in op te slaan.'
             </div>
-            <div><span>Yasmine:</span> "Ja! We hebben toen een <code>punt</code>-constructor gebruikt om een lijst van
-                coördinaten te maken."
+            <div> &emsp; <span>Yasmine:</span> 'Ja! We hebben toen een <code>punt</code>constructor gebruikt om een lijst van
+                coördinaten te maken.'
             </div>
             <div class="stagedir">
-                Yasmine bekijkt de code voor de <code>punt</code>-constructor nog eens:
+                Yasmine bekijkt de code voor de <code>punt</code>constructor nog eens:
                 <br />
                 <img class="indent" height="100" src="../../afb/h3/l1/blocks/p1-b1.png  " alt="Geen Afbeelding" />
             </div>
-            <div><span>Robin:</span> "We hebben daarna een selector gebruikt om een <em>x</em>- of
-                <em>y</em>-coördinaat te kiezen."</div>
+            <div> &emsp; <span>Robin:</span> 'We hebben daarna een selector gebruikt om een <em>x</em>- of
+                <em>y</em>-coördinaat te kiezen.'</div>
             <div class="stagedir">
                 Robin bekijkt de code voor de <code>coördinaat</code>selectors:
                 <br />
                 <img class="indent" height="100" src="../../afb/h3/l1/blocks/p1-b2.png  " alt="Geen Afbeelding"> en
                 <img height="100" src="../../afb/h3/l1/blocks/p1-b3.png  " alt="Geen Afbeelding">
             </div>
-            <div><span>Yasmine:</span> "In dit project hebben we een <code>contact</code>-constructor nodig en selectors
-                om toegang te krijgen tot de naam, het adres en telefoonnummer van het contact.</div>
+            <div> &emsp; <span>Yasmine:</span> 'In dit project hebben we een <code>contact</code>constructor nodig en selectors
+                om toegang te krijgen tot de naam, het adres en telefoonnummer van het contact.'</div>
         </div>
 
         <div class="forYouToDo">
             <ol start="4">
                 <li>
-                    <div class="sidenoteBig">
-                        <strong>Shortcut:</strong> Je zou de volgende text in het "Maak een blok"-venster kunnen plakken
-                        om het blok sneller te maken.
-                        <p style="margin-left:25px;"><code>contact met naam: %naam adres: %adres
-                                telefoon: %telefoon</code>
-                        </p>
-                        De %-tekens zorgen ervoor dat de woorden variabelen worden.
-                    </div>
-                    Maak een <code>contact</code><em>-constructor</em> die drie variabelen accepteert als invoer: de
-                    <var>naam</var>, het <var>telefoonnummer</var> en het <var>adres</var> van een contact. <br />
+                    Maak een <code>contact</code>constructor die drie variabelen accepteert als invoer: de
+                    <var>naam</var>, het <var>telefoonnummer</var> en het <var>adres</var> van een contact. <br /><br />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b4.png"
+                        alt="Geen Afbeelding" /><br /><br />
+                    De constructor zal een contact terugrapporteren (een lijst van de drie variabelen):<br /><br />
+                    <img height="130" class="indent" src="../../afb/h3/l1/blocks/p1-b5.png"
                         alt="Geen Afbeelding" /><br />
-                    De constructor zal een contact terugrapporteren (een lijst van de drie variabelen):<br />
-                    <img height="100" class="indent" src="../../afb/h3/l1/blocks/p1-b5.png"
-                        alt="Geen Afbeelding" /><br />
+                </li><br />
                 </li>
+                <div class="endnote">
+                    <strong>Shortcut:</strong> Je zou de volgende text in het 'Maak een blok'-venster kunnen plakken
+                    om het blok sneller te maken.
+                    <p style="margin-left:25px;"><code>contact met naam: %naam adres: %adres
+                            telefoon: %telefoon</code>
+                    </p>
+                    De %-tekens zorgen ervoor dat de woorden variabelen worden.
+                </div><br />
                 <li>
-                    Schrijf de <em>selector</em>blokken om de <code>naam van een contact</code>, <code>adres van een
-                        contact</code>, of <code>telefoonnummer van een contact</code> terug te kunnen vinden: <br />
+                    Schrijf de selector-blokken om de <code>naam van een contact</code>, <code>adres van een
+                        contact</code>, of <code>telefoonnummer van een contact</code> terug te kunnen vinden: <br /><br />
                     <img class="indent" height="75" src="../../afb/h3/l1/blocks/p1-b6.png" alt="Geen Afbeelding">
                     <br />
                     <img class="indent" height="75" src="../../afb/h3/l1/blocks/p1-b7.png" alt="Geen Afbeelding">
                     <br />
                     <img class="indent" height="75" src="../../afb/h3/l1/blocks/p1-b8.png" alt="Geen Afbeelding">
-                </li>
+                </li><br />
                 <div class="endnote">
-                    <p>Het is niet netjes om de constructor als een invoer van de selector te gebruiken, zoals gedaan
-                        wordt in bovenstaande afbeeldingen. Deze
-                        afbeeldingen zijn voorbeelden om te laten zien wat de selectors zouden moeten kunnen als er een
-                        contact gegeven wordt als invoer. In <em>jouw</em> programma zal de invoer een item van de
-                        contactenlijst zijn, zoals hier:
-                        <br />
+                    <p>Het is wat kunstmatig om de constructor als een invoer van de selector te gebruiken, zoals je hierboven ziet. Deze afbeeldingen zijn alleen voorbeelden, om te laten zien wat de selectors zouden moeten kunnen doen wanneer ze een contact als invoer krijgen. <br /><br />
+                    In jouw programma zullen de selectors een item uit de contactlijst als invoer nemen en het juiste stuk van dat contact uitvoeren, zoals hier:
+                        <br /><br />
                         <img class="indent" height="50" src="../../afb/h3/l1/blocks/p1-b9.png" alt="Geen Afbeelding" />
                     </p>
-                </div>
+                </div><br />
                 <li>
-                    Verander de invoertypes voor iedere selector zodat het duidelijk is dat ze een lijst (een heel
+                    Verander de invoertypes voor iedere selector, zodat het duidelijk is dat ze een lijst (een heel
                     contact) als invoer nodig hebben.
-                    <br />
+                    <br /><br />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b10.png" alt="Geen Afbeelding" />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b11.png" alt="Geen Afbeelding" />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b12.png" alt="Geen Afbeelding" />
-
+                    <br /><br />
                     <div class="endnote">
                         Je hebt geleerd hoe je <a href="../hoofdstuk-2/H2L2P1.html"> Een invoertype moet
                             specificeren</a> in Hoofdstuk 2.
                     </div>
-                </li>
+                </li><br />
                 <li>
-                    Kijk of je blokken werken, debug de problemen die je vindt.
+                    Kijk of je blokken werken. Debug de problemen die je vindt.<br /><br />
                     <ol>
                         <li> Als eerste maak je een constructor (met invoerwaardes) in iedere selector (zoals hierboven)
-                            om te kijken of ze het goede stukje van een contact terugrapporteren.</li>
+                            om te kijken of ze het goede stukje van een contact rapporteren.</li><br />
                         <li> Vervolgens gebruik je je <code>contact</code>-constructor om een paar contacten <code>toe
                                 te voegen</code> aan je contactenlijst.
                             <div class="endnote">
-                                Je kan de volgende voorbeelden gebruiken of je eigen contacten verzinnen.
+                                Je kan de volgende voorbeelden gebruiken of je eigen contacten verzinnen.<br /><br />
                                 <table class="bordered" summary="3 voorbeeldcontacten">
                                     <tr>
                                         <th scope="col">Naam</th>
@@ -155,45 +160,46 @@
                                     <tr>
                                         <td style="white-space: nowrap;">Bo van der Kabarchenbok</td>
                                         <td style="white-space: nowrap;">Kerkstraat 123, Amsterdam</td>
-                                        <td style="white-space: nowrap;">212-555-1234</td>
+                                        <td style="white-space: nowrap;">020-5551234</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Alex Ypsilinti</td>
                                         <td style="white-space: nowrap;">Zuidplein 382, Assen</td>
-                                        <td style="white-space: nowrap;">208-555-6789</td>
+                                        <td style="white-space: nowrap;">0592-555678</td>
                                     </tr>
                                     <tr>
                                         <td style="white-space: nowrap;">Yasmine Katadreuffe</td>
                                         <td style="white-space: nowrap;">Hoofdlaan 420, Maastricht</td>
-                                        <td style="white-space: nowrap;">617-555-1098</td>
+                                        <td style="white-space: nowrap;">043-5551098</td>
                                     </tr>
                                 </table>
                             </div>
-                        </li>
+                        </li><br />
                         <li>Zie hoe je contacten in je contactenlijst verschijnen. </li>
+                        <br />
                         <div class="narrower">
-                            Snap<em>!</em> heeft 2 verschillende manieren om lijsten in lijsten weer te geven. Je kan
-                            kiezen op welke manier je de lijst wil weergeven door met je rechter-muisknop op de
-                            <var>contactenlijst</var>-variabele op het speelveld te klikken.
+                            Snap<em>!</em> heeft twee verschillende manieren om lijsten in lijsten weer te geven. Je kan
+                            kiezen op welke manier je de lijst wilt weergeven door met je rechter-muisknop op de
+                            <var>contactenlijst</var>variabele in het speelveld te klikken.
 
                             <div class="endnote">
-                                Als je de variabele niet kan zien op het speelveld, zorg ervoor dat het vakje bij de
-                                <var>contactenlijst</var>variabele in het Variabelenpalet aangevinkt is.
+                                Als je de variabele niet ziet in het speelveld, zorg er dan voor dat het vakje bij de
+                                <var>contactenlijst</var>variabele in het Variabelen-palet is aangevinkt:
                                 <img class="inlinde" src="../../afb/h3/l1/others/p1-o3.png" alt="Geen Afbeelding" />
-                            </div>
+                            </div><br />
                             <ul style="list-style-type: disc;">
                                 <li>
                                     <strong>Lijstweergave</strong> voor <var>contactenlijst</var>:
                                     <br />
                                     <img class="indent" src="../../afb/h3/l1/others/p1-o1.png" alt="Geen Afbeelding" />
-                                </li>
+                                </li><br />
                                 <li>
                                     <strong>Tabelweergave</strong> voor <var>contactenlijst</var>:
                                     <br />
                                     <img class="indent" src="../../afb/h3/l1/others/p1-o2.png" alt="Geen Afbeelding" />
                                 </li>
                             </ul>
-                        </div>
+                        </div><br />
                         <li>
                             Probeer de <code>naam</code>, het <code>adres</code>, of <code>telefoonnummer</code> te
                             selecteren van een contact in jouw lijst.
@@ -201,11 +207,13 @@
                             <img class="indent" height="50" src="../../afb/h3/l1/blocks/p1-b13.png"
                                 alt="Geen Afbeelding" />
                         </li>
-                        <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
-                        <li><strong>Debug</strong> de problemen die je tegenkomt.</li>
+                        <br />
+                        <li><strong>Debug</strong> de problemen die je tegenkomt.</li><br />
                     </ol>
+                    <img class="imageLeft" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
+
                 </li>
-            </ol>
+            </ol><br /><br /><br />
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
