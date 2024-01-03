@@ -19,56 +19,61 @@
 <body>
     <h2>Transformeren van alle items in een lijst</h2>
     <div class="learn">
-        <p><strong>Op deze pagina</strong> gebruik je ADT's met het <code>map</code>-blok om alle namen in je
+        <p><strong>Op deze pagina</strong> gebruik je ADT's (Abstracte Datatypes) met het <code>map</code>-blok om alle namen in je
             <var>contactenlijst</var> weer te geven.</p>
     </div>
 
     <p>
         Zoals je weet stelt het <code>houd</code>-blok je in staat alle items door te nemen met gebruik van een
-        predicaat, en het geeft alleen de items door die het predicaat waar maken. Het <img height="40" class="inline"
-            src="../../afb/h3/l1/blocks/p4-b1.png" alt="Geen Afbeelding" />-blok stelt je ook in staat om in een keer
-        door een hele lijst te werken. <code>map</code> zorgt ervoor dat je dezelfde functie uit kan voeren op ieder
-        item in een lijst. <code>map</code> ontvangt twee invoeren: een functie (een rapporteur met een leeg invoer vak)
-        en een lijst, en het rapporteert een nieuwe lijst. Elk item in deze nieuwe lijst is het resultaat van het
-        oproepen van de functie met een item van de invoerlijst. Bijvoorbeeld:
+        predicaat, en het geeft alleen de items door die het predicaat <code>waar</code> maken. Het <img height="40" class="inline"
+            src="../../afb/h3/l1/blocks/p4-b1.png" alt="Geen Afbeelding" /> blok stelt je ook in staat om in een keer
+        door een hele lijst te werken. <code>Map</code> zorgt ervoor dat je dezelfde functie uit kan voeren op ieder
+        item in een lijst. <br /><br />
+        <code>Map</code> ontvangt twee invoeren: een functie (met een leeg invoervak)
+        en een lijst, en het rapporteert een nieuwe lijst. <br />
+        Elk item in deze nieuwe lijst is het resultaat van het aanroepen van de functie met een item uit de oorspronkelijke 
+        lijst als invoer.<br />
+        Bijvoorbeeld:
         <br />
-        <img height="100" class="indent" src="../../afb/h3/l1/blocks/p4-b2.png" alt="Geen Afbeelding" />
-        <br />
-        <img height="100" class="indent" src="../../afb/h3/l1/blocks/p4-b3.png" alt="Geen Afbeelding" />
+        <img height="120" class="indent" src="../../afb/h3/l1/blocks/p4-b2.png" alt="Geen Afbeelding" />
+        <br /> <br />
+        <img height="120" class="indent" src="../../afb/h3/l1/blocks/p4-b3.png" alt="Geen Afbeelding" />
+        <br /><br />
     </p>
 
     <div class="takeNote">
-        <p> Je schrijft zelf de functie die de items aanpast en <code>map</code> past die functie toe op elk item in
+        <p> Je schrijft zelf de functie die de items aanpast, en <code>map</code> past die functie toe op elk item in
             de invoerlijst en rapporteert daarna de lijst met resultaten.
         </p>
         <p> Zie je dat de invoerfunctie voor <code>map</code> altijd een leeg invoervak heeft? Bij het
-            <code>houd</code>-blok was dat ook zo. Dit lege invoervak is waar een item uit de lijst
-            wordt neergezet, wanneer de functie wordt uitgevoerd.
+            <code>houd</code> blok was dat ook zo. Deze lege plek is waar een item uit de lijst
+            naartoe gaat, elke keer dat de functie wordt uitgevoerd.
         </p>
     </div>
 
     <div class="forYouToDo" id="first">
         <ol>
-            <li> Als het niet al openstaat, open dan je H3L1-Contactenlijst-project.</li>
+            <li> Open je H3L1-Contactenlijst project.</li>
             <li>
-                <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                Experimenteer met deze voorbeelden van <code>map</code>. overleg en leg daarna uit in je eigen woorden
-                wat deze programma's doen.
+                <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" /><br/>
+                Experimenteer met de volgende voorbeelden van <code>map</code>. Overleg samen en leg daarna in je eigen woorden
+                uit wat deze expressies doen. 
+                <br /><br/>
+                <img height="50" class="indent" src="../../afb/h3/l1/blocks/p4-b4.png" alt="Geen Afbeelding" />
                 <br />
-                <img height="40" class="indent" src="../../afb/h3/l1/blocks/p4-b4.png" alt="Geen Afbeelding" />
+                <img height="50" class="indent" src="../../afb/h3/l1/blocks/p4-b5.png" alt="Geen Afbeelding" />
                 <br />
-                <img height="40" class="indent" src="../../afb/h3/l1/blocks/p4-b5.png" alt="Geen Afbeelding" />
-                <br />
-                <img height="40" class="indent" src="../../afb/h3/l1/blocks/p4-b6.png" alt="Geen Afbeelding" />
+                <img height="50" class="indent" src="../../afb/h3/l1/blocks/p4-b6.png" alt="Geen Afbeelding" />
+                <br/><br/>
             </li>
-            <li> Gebruik het <code>map</code>-blok samen met de kiezer <img height="40" class="inline"
-                    src="../../afb/h3/l1/blocks/p3-b6.png" alt="Geen Afbeelding" /> om een lijst met alleen de namen van
+            <li> Gebruik het <code>map</code> blok samen met de selector <img height="40" class="inline"
+                    src="../../afb/h3/l1/blocks/p3-b6.png" alt="Geen Afbeelding" /> om een lijst met alleen de <em>namen</em> van
                 alle contacten te rapporteren.
             </li>
         </ol>
     </div>
 
-    <h3>Controlevraag: <code>map</code>-blok</h3>
+    <h3>Test jezelf - <code>map</code> blok</h3>
     <div class="forYouToDo">
         <ol start="4">
             <li>
@@ -77,20 +82,18 @@
                     maxchoices="5" responseIdentifier="resp4" shuffle="false">
                     <div class="prompt">
                         <p>
-                            Deze vraag refereert naar deze twee lijsten:<br />
-                            <img height="45" class="indent" src="../../afb/h3/l1/blocks/p4-b7.png"
+                            Deze vraag heeft betrekking op deze twee lijsten:<br />
+                            <img height="55" class="indent" src="../../afb/h3/l1/blocks/p4-b7.png"
                                 alt="Geen Afbeelding" /><br />
-                            <img height="90" class="indent" src="../../afb/h3/l1/blocks/p4-b8.png"
-                                alt="Geen Afbeelding" /><br />
-                            Welke van deze stellingen is <strong>waar</strong>?
-                            <br />
-                            Kies <strong>alle</strong> opties waarvan je denkt dat ze waar zijn.
+                            <img height="110" class="indent" src="../../afb/h3/l1/blocks/p4-b8.png"
+                                alt="Geen Afbeelding" /><br /> <br />
+                            Welke van deze stellingen is <strong>waar</strong>? Kies alle opties waarvan je denkt dat ze waar zijn. <br /> <br />
                         </p>
                     </div>
 
                     <div class="choice" identifier="c1">
                         <div class="text">
-                            <img height="40" src="../../afb/h3/l1/blocks/p4-b9.png" alt="Geen Afbeelding" />
+                            <img height="50" src="../../afb/h3/l1/blocks/p4-b9.png" alt="Geen Afbeelding" />
                             rapporteert de lijst<var>{k, 5, v, i, 3, v, 2, 3, d, 6}</var>.
                         </div>
                         <div class="feedback">
@@ -99,18 +102,18 @@
                     </div>
                     <div class="choice" identifier="c2">
                         <div class="text">
-                            <img height="40" src="../../afb/h3/l1/blocks/p4-b10.png" alt="Geen Afbeelding">
+                            <img height="50" src="../../afb/h3/l1/blocks/p4-b10.png" alt="Geen Afbeelding">
                             rapporteert de lijst <var>{konijn}</var>.
                         </div>
                         <div class="feedback">
                             Helaas. Het lege vakje in deze functie verwacht een <strong>lijst</strong> als invoer, maar
                             <code>map</code> voegt 1 item per keer in van de lijst <code>woorden en nummers</code>.
-                            <code>map</code> zal daarom een foutmelding geven als deze code uitgevoerd wordt.
+                            <code>Map</code> zal daarom een foutmelding geven als deze code uitgevoerd wordt.
                         </div>
                     </div>
                     <div class="choice" identifier="c5">
                         <div class="text">
-                            <img height="40" src="../../afb/h3/l1/blocks/p4-b11.png" alt="Geen Afbeelding">
+                            <img height="50" src="../../afb/h3/l1/blocks/p4-b11.png" alt="Geen Afbeelding">
                             rapporteert de lijst <var>{Leeuwarden, Assen, Maastricht, Middelburg}</var>.
                         </div>
                         <div class="feedback">
@@ -119,7 +122,7 @@
                     </div>
                     <div class="choice" identifier="c3">
                         <div class="text">
-                            <img height="40" src="../../afb/h3/l1/blocks/p4-b12.png" alt="Geen Afbeelding">
+                            <img height="50" src="../../afb/h3/l1/blocks/p4-b12.png" alt="Geen Afbeelding">
                             rapporteert de lijst <var>{L, A, M, M}</var>.
                         </div>
                         <div class="feedback">
@@ -128,7 +131,7 @@
                     </div>
                     <div class="choice" identifier="c4">
                         <div class="text">
-                            <img height="40" src="../../afb/h3/l1/blocks/p4-b13.png" alt="Geen Afbeelding"> rapporteert
+                            <img height="50" src="../../afb/h3/l1/blocks/p4-b13.png" alt="Geen Afbeelding"> rapporteert
                             de lijst
                             <var>{Friesland, Drenthe, Limburg, Zeeland}</var>.
                         </div>
