@@ -21,14 +21,14 @@
         <h2>De zetten onthouden</h2>
 
         <div class="learn">
-            <p> <strong>In deze les</strong>, ga je verder met het <a
-                    href="../hoofdstuk-2/H2L4P4.html">Boter-Kaas-en-Eierenproject uit Hoofdstuk 2 </a> om een programma
-                te maken dat het bord <em>analyseert</em> en een gewonnen of gelijk spel detecteert.
+            <p> <strong>In deze les</strong> ga je verder met het <a
+                    href="../hoofdstuk-2/H2L4P4.html">Boter-Kaas-en-Eieren project uit Hoofdstuk 2 </a> om een programma
+                te maken dat het bord <em>analyseert</em> en een gewonnen of gelijkspel detecteert.
             </p>
-            <p> <strong>Op deze pagina</strong>, ga je je programma voorbereiden door gedane zetten op te slaan.
+            <p> <strong>Op deze pagina</strong> ga je je programma voorbereiden door gedane zetten op te slaan.
             </p>
         </div>
-        <p> Toen je voor het eerst boter, kaas en eieren maakte, was het gemakkelijk om 'illegale' zetten te
+        <p> Toen je voor het eerst boter, kaas en eieren programmeerde, was het gemakkelijk om 'illegale' zetten te
             detecteren (wanneer je iets probeert te plaatsen in een hokje waar al een X of O staat). Dit is zo omdat je
             alleen naar 1 hokje hoefde te kijken. Maar om winst en gelijkspel te detecteren, moeten
             we het programma leren om de staat van <em>hele spelbord</em> te controleren en niet alleen één hokje. Dus
@@ -42,35 +42,33 @@
             <div class="endnote">
 
                 Je hebt geleerd over <strong>globale variabelen</strong> in Hoofdstuk 2 Les 1 Pagina 3: <a
-                    href="../hoofdstuk-2/H2L1P3.html">De Score Bijhouden met
-                    Globale Variabelen</a>.
+                    href="../hoofdstuk-2/H2L1P3.html">De score bijhouden met
+                    globale variabelen</a>.
 
             </div>
         </p>
 
         <div class="forYouToDo" id="first">
             <ol>
-                <li> Open je <strong>H2L4-BoterKaasEieren</strong>-project en sla deze op als
-                    <strong>H3L2-BoterKaasEieren</strong> zodat je nog steeds de oude versie hebt en je alleen
+                <li> Open je H2L4-BoterKaasEieren project en sla het nu op als `H3L2-BoterKaasEieren` zodat de oude versie bewaard blijft en je alleen
                     aanpassingen maakt in het nieuwe project. </li>
-                <li> Maak een globale variabele genaamd <var>bord</var>, die aan het begin van het spel een lijst
-                    bevat met daarin negen keer het woord "Leeg".<br />
+                <li> Maak een globale variabele genaamd <var>bord</var> die aan het begin van het spel een lijst
+                    bevat met daarin negen keer het woord 'Leeg'.<br />
                 </li>
             </ol>
         </div>
 
         <p> Elke sprite moet zijn eigen plek op het bord weten, zodat we het <code>item van</code> blok kunnen gebruiken
             om daar een X of O in te zetten. Dus maken we een <em>sprite-lokale variabele</em>,
-            <img height="40" class="inline" src="../../afb/h3/l2/p1-b2.png" alt="Geen Afbeelding" /> en
-            elke clone zal zijn <em>eigen versie</em> van deze variabele hebben.
+            <img height="35" class="inline" src="../../afb/h3/l2/p1-b2.png" alt="Geen Afbeelding" /> en
+            elke kloon zal zijn <em>eigen versie</em> van deze variabele hebben.
         </p>
 
         <div class="vocabFullWidth">
             <div class="sidenoteBig">
                 <p>
-                    Je hebt geleerd over <strong>script-lokale variabelen</strong> in
-                    <a href="../hoofdstuk-2/H2L1P1.html"> Hoofdstuk 2 Les 1 Pagina 1: Raad-het-getal Spel
-                        verbeteren met variabelen</a>.
+                    Je hebt geleerd over <strong>script-lokale variabelen</strong> in Hoofdstuk 2 Les 1 Pagina 1: 
+                    <a href="../hoofdstuk-2/H2L1P1.html"> Maak een Raad-het-getalspel met script-variabelen </a>.
                 </p>
             </div>
             <p>
@@ -83,48 +81,48 @@
         <div class="forYouToDo">
             <ol start="3">
                 <li>
-                    <div class="sidenote">
-                        <p>Je hebt geleerd over het <strong>initialiseren van variabelen</strong> in <a
-                                href="../hoofdstuk-2/H2L1P1.html">Hoofdstuk 2 Les 1 Pagina 1: Raad-het-getal
-                                Spel verbeteren met variabelen</a>.</p>
-                    </div>
-                    Maak een lokale (sprite)-variabele aan, <var>positienummer</var>.
+                   
+                    Maak een lokale (sprite) variabele aan, met de naam <var>positienummer</var>.
                     <div class="narrower">
                         <p>
-                            Je maakt een lokale variabele op een soortgelijke manier aan als een globale variabele:
+                            Een <em>lokale</em> variabele maak je op een dezelfde manier als een <em>globale</em> variabele:
                             <ul>
                                 <li> Klik op
                                     <img class="inline nopadtb noshadow" src="../../afb/h3/l2/p1-b3.png"
-                                        alt="Geen Afbeelding" />
-                                    in het variabelenpalet.
+                                        alt="Geen Afbeelding" />in het variabelenpalet.
                                 </li>
-                                <li> Selecteer "alleen voor dit object" om een lokale (sprite) variabele aan te maken.
+                                <li> Selecteer 'alleen voor dit object' om een lokale (sprite) variabele aan te maken.
                                 </li>
+                                
                             </ul>
                         </p>
 
                         <img class="indent" src="../../afb/h3/l2/p1-o2.png" alt="Geen Afbeelding" /><br />
+                        <div class="endnote">
+                            <p>Je hebt geleerd over het <strong>initialiseren van variabelen</strong> in Hoofdstuk 2 Les 1 Pagina 1: <a
+                                    href="../hoofdstuk-2/H2L1P1.html">Maak een Raad-het-getalspel met script-variabelen
+                                </a>.</p>
+                        </div>
                     </div>
                 </li>
                 <li>
-                    Geef terwijl je clones aanmaakt elk <var>positienummer</var> zijn bijbehorende waarde
-                    (1-9).<br />
+                    Geef terwijl je klonen aanmaakt elk <var>positienummer</var> zijn bijbehorende waarde (1-9).<br />
                     <div class="endnote">
                         <a href="#hint-1" data-toggle="collapse" class="collapsed">
                             Klik hier voor een hint voor het instellen van <var>positienummer</var>.</a>
                         <div id="hint-1" class="collapse">
-                            In de lus die clones aanmaakt, verhoog iedere keer de waarde van <var>positienummer</var>
+                            In de lus die klonen aanmaakt, verhoog iedere keer de waarde van <var>positienummer</var>
                             met één voor elke nieuwe kloon die je aanmaakt.
 
                         </div>
                     </div>
-                    <div class="takeNote">Zorg ervoor dat het <var>positienummer</var> van de ouder geen waarde van 1-9
-                        krijgt zodat het niet in conflict komt met een kloon.</div>
+                    <div class="takeNote">Zorg ervoor dat het <var>positienummer</var> van de <em>ouder</em> geen waarde van 1-9
+                        krijgt, zodat de ouder niet in conflict komt met een kloon.</div>
                 </li>
                 <li> Wanneer er op een hokje geklikt wordt, vervang dan het invoerblokje van het hokje in de
-                    <var>bord</var>-lijst met een X of O.</li>
-                <li> Kijk naar de waardes van de <var>bord</var>-variabele terwijl je Boter-Kaas en Eieren speelt. Zorg
-                    ervoor dat het werkt zoals het hoort, en los eventuele bugs (fouten) op.</li>
+                    <var>bord</var> lijst met een X of O.</li>
+                <li> Kijk naar de waarden van de <var>bord</var> variabele terwijl je Boter-Kaas en Eieren speelt. Zorg
+                    ervoor dat het werkt zoals het hoort en los eventuele bugs op.</li>
                 <li>
                     <img class="inline" src="../../afb/icons/SlaOpLater.png" alt="Geen Afbeelding" />
                 </li>
