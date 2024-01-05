@@ -20,19 +20,19 @@
     <div class="full">        
         <h2><strong>Staafdiagrammen maken</strong></h2>
         <div class="learn">
-            <p><strong>In deze les</strong> leer je een datavisualisatie-tool maken met staafdiagrammen voor
-                verschillende datasets. Je past abstractie en <code>map</code>, een functie van hogere
-                orde, toe.
+            <p><strong>In deze les</strong> maak je een datavisualisatie-programma dat staafdiagrammen kan genereren voor verschillende datasets. <br />
+                Je past <em>abstractie</em> toe en <code>map</code>, een hogere orde functie.
                 <br>
                 <img class="indent" src="../../afb/h3/l4/p1-o1.png" height="250" alt="Geen Afbeelding"><img
                     src="../../afb/h3/l4/p1-v1.gif" height="300" alt="Geen Afbeelding"></p>
+                    In deze afbeeldingen zijn gegevens verwerkt uit 2016; het artikel in <strong>Aan de slag</strong> hieronder bevat nieuwe data.
         </div>
         <div class="forYouToDo" id="first">
             <ol>
                 <li> <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding">
                     Technologie heeft overal ter wereld geleid tot milieuvervuiling. Bekijk samen de gegevens op deze <a
                         href="http://www.ucsusa.org/global_warming/science_and_impacts/science/each-countrys-share-of-co2.html#.WVqJI9PytE5"
-                        target="_blank">link</a>(Engels). <ol>
+                        target="_blank">link </a>(Engels).<ol>
                         <li>Welke landen hebben de hoogste uitstoot van koolstofdioxide (CO<sub>2</sub>)?</li>
                         <li>Welke landen hebben de hoogste uitstoot CO<sub>2</sub> per capita (per
                             persoon) ?</li>
@@ -40,8 +40,7 @@
                             aan de wereldwijde milieuvervuiling?</li>
                     </ol>
                     <div class="takeNote">
-                        Je kan kennis en inzicht vergaren door met anderen te praten en door vragen
-                        en hypotheses te stellen.
+                        Je kan kennis en inzicht verwerven door met anderen te praten terwijl je vragen en hypotheses over gegevens formuleert.
                     </div>
                 </li>
                 <li> <a class="run"
@@ -52,62 +51,53 @@
                     <div class="endnote">
                         Dit bestand bevat
                         <ul>
-                            <li>Een <em>maker</em> van een nieuwe ADT (Abstracte Datatype) <code>data-record</code> met
-                                twee invoervelden <code>label</code> en <code>waarde</code>.<br>
-                                <img class="indent" src="../../afb/h3/l4/p1-b1.png" height="135" alt="Geen Afbeelding">
+                            <li>Een <em>bouwer</em> van een nieuwe ADT (Abstracte Datatype) genaamd <code>data-record</code>, met
+                                de invoervelden <code>label</code> en <code>waarde</code>.<br/>
+                                <img class="indent" src="../../afb/h3/l4/p1-b1.png" height="135" alt="Geen Afbeelding"><br/><br/>
                             </li>
-                            <li>Twee <em>kiezers</em> voor de nieuwe ADT, om specifieke gegevens uit
-                                <code>data-record</code> te halen.<br>
+                            <li>Twee <em>selectoren</em> voor de nieuwe ADT, om specifieke gegevens uit
+                                <code>data-record</code> te halen.<br/>
                                 <img class="indent" src="../../afb/h3/l4/p1-b2.png" height="50" alt="Geen Afbeelding">
                                 <br>
                                 <img class="indent" src="../../afb/h3/l4/p1-b3.png" height="50" alt="Geen Afbeelding">
-                                <br></li>
-                            <li>Een <code>max van lijst</code> rapporteur die het grootste element van de lijst
+                                <br><br/></li>
+                            <li>Een <code>max van lijst</code> <em>functie</em> die het grootste element van de lijst
                                 vindt.<br>
-                                <img class="indent" src="../../afb/h3/l4/p1-b4.png" height="50" alt="Geen Afbeelding">
+                                <img class="indent" src="../../afb/h3/l4/p1-b4.png" height="50" alt="Geen Afbeelding"><br/><br/>
                             </li>
+                            Bekijk de blokken die al voor je gemaakt zijn en probeer te begrijpen hoe ze werken.<br/><br/>
                         </ul>
                     </div>
-
-                    Bekijk de blokken die al voor je gemaakt zijn en probeer te begrijpen hoe ze werken.
-                    <br>
                 </li>
 
-                <li> Ontwikkel code voor het <code>teken assen</code>blok. Het moet de <em>horizontale</em> en
+                <li> Ontwikkel code voor het <code>teken assen</code> blok. Het moet de <em>horizontale</em> en
                     <em>verticale</em> assen tekenen, gebaseerd op de gegeven coördinaten van <var>x0</var> en
-                    <var>y0</var> en de gegeven lengte- en hoogteinformatie.
-                    <br>
-                    <img class="indent" src="../../afb/h3/l4/p1-b5.png" height="60" alt="Geen Afbeelding"> <br>
+                    <var>y0</var> en de gegeven lengte- en hoogteinformatie.<br/><br/>
+                    <img class="indent" src="../../afb/h3/l4/p1-b5.png" height="60" alt="Geen Afbeelding"> <<br/><br/>
 
                     <div class="endnote">
-                        Dit diagram kan je helpen om te begrijpen hoe de gegeven informatie bepaalt hoe en waar de
-                        <em>horizontale</em> en <em>verticale</em> assen getekend worden. Omdat je alleen positieve
-                        waardes in de grafiek zet raken de assen elkaar in de linkeronder hoek. Die hoek heet
-                        <strong>de oorsprong</strong> en heeft als
-                        coördinaten <var>(x0,y0) </var>zoals je kan zien in het diagram. Er moeten op dit moment nog
-                        geen labels of markeringen zijn.
-                        <!-- Weet niet waarom deze zin hierin staat:
-                            De markeringen in het diagram staan er voor de duidelijkheid. 
-                        -->
-                        <br>
-                        <img class="indent" src="../../afb/h3/l4/p1-o2.png" height="200" alt="Geen Afbeelding">
-                    </div>
+                        Dit diagram kan je helpen om te begrijpen hoe de gegeven informatie de horizontale en verticale assen bepaalt. 
+                        Omdat je alleen positieve waarden in de grafiek opneemt, raken de assen elkaar in de linkerbenedenhoek. Die hoek 
+                        heet <strong>de oorsprong</strong> en heeft als coördinaten <var>(x0,y0)</var>zoals je kan zien in het diagram. 
+                        Op dit punt staan normaal geen markeringen of labels, maar hier worden de coördinaten voor de duidelijkheid 
+                        toch even getoond... <br/> <br/>
+                        <img class="indent" src="../../afb/h3/l4/p1-o2.png" height="200" alt="Geen Afbeelding"> <br/> <br/>
+                    </div><br/>
 
-                    Zorg er ook voor in het <code>teken assen</code>blok dat de coördinaten van de oorsprong in globale
-                    variabelen <var>x-oorsprong</var> en <var>y-oorsprong</var> opgeslagen worden. In de komende stappen
-                    van dit project gaan andere blokken deze informatie gebruiken om de staven en labels goed te
-                    plaatsen.
-                    <br>
-                    <img class="indent" src="../../afb/h3/l4/p1-b6.png" height="100" alt="Geen Afbeelding">
-                    <img src="../../afb/h3/l4/p1-b7.png" height="75" alt="Geen Afbeelding">
+                    Zorg er in het <code>teken assen</code>blok ook voor dat de coördinaten van de oorsprong worden opgeslagen 
+                    in de globale variabelen <var>x-oorsprong</var> en <var>y-oorsprong</var>. In de volgende stappen van dit project 
+                    zullen andere blokken deze informatie nodig hebben om de staven en labels goed uit te lijnen. 
+                    <br/>
+                    <img class="indent" src="../../afb/h3/l4/p1-b6.png" height="120" alt="Geen Afbeelding">
+                    <img src="../../afb/h3/l4/p1-b7.png" height="75" alt="Geen Afbeelding"><br/><br/>
                 </li>
 
                 <li> Bekijk het normale <code>label</code>blok dat inbegrepen zit bij het startproject. Je moet
-                    waarschijnlijk bij het Instellingen-menu (<img src="../../afb/icons/settings.png">) "JavaScript
-                    extensions" aanzetten. Probeer te kijken of je de locatie en richting van de teken-sprite kan
+                    waarschijnlijk bij het Instellingen-menu <img src="../../afb/icons/settings.png"> `JavaScript
+                    extensions` aanvinken. Probeer te kijken of je de locatie en richting van de teken-sprite kan
                     veranderen.
-                    <br>
-                    <img class="indent" src="../../afb/h3/l4/p1-b8.png" height="45" alt="Geen Afbeelding">
+                    <br/><br/>
+                    <img class="indent" src="../../afb/h3/l4/p1-b8.png" height="45" alt="Geen Afbeelding"><br/><br/>
 
                     <div class="endnote">
                         Merk op dat het <code>label</code>blok geen <code>pen neer</code> nodig heeft om te
@@ -116,16 +106,16 @@
                         Je hoeft niet in het <code>label</code>blok te kijken, maar als je dat doet, zie je iets
                         onbekends.
                         <br>
-                        <a href="#hint-1" data-toggle="collapse" class="collapsed"> Laat meer informatie zien.</a>
+                        <a href="#hint-1" data-toggle="collapse" class="collapsed"> Laat meer informatie zien.</a><br/><br/>
 
                         <div id="hint-1" class="collapse">
-                            <img class="indent" src="../../afb/h3/l4/p1-b10.png" height="150" alt="Geen Afbeelding"><br>
-                            Net als bijna alles in je browser is Snap<em>!</em> geschreven in de programmeertaal
-                            <em>JavaScript</em>. Het <code>label</code>blok is geïmplementeerd met gebruik van een
-                            Snap<em>!</em> <code>JavaScript-functie</code>blok. Met het
-                            <code>JavaScript-functie</code>blok kunnen ervaren programmeurs
-                            Snap<em>!</em> uitbreiden door nieuwe blokken te schrijven in JavaScript.
-                            <br>
+                            <img class="indent" src="../../afb/h3/l4/p1-b10.png" height="180" alt="Geen Afbeelding"><br/><br/>
+                            <p STYLE="margin-left: 20px"> Net als bijna alles in je browser is Snap<em>!</em> geschreven in 
+                                de programmeertaal <em>JavaScript</em>. Het <code>label</code>blok is geïmplementeerd met 
+                                gebruik van een Snap<em>!</em> <code>JavaScript-functie</code>blok. Met het 
+                                <code>JavaScript-functie</code>blok kunnen ervaren programmeurs Snap<em>!</em> uitbreiden door 
+                                nieuwe blokken te schrijven in JavaScript.
+                            <br/><br/></p>
                         </div>
 
                         <p>
@@ -135,23 +125,21 @@
                         </p>
                     </div>
                 </li>
-
+                <br/>
                 <li>
-                    Maak het uitgebreidere <code>label</code>blok af, degene met een invoerveld voor de richting. Het
-                    hoort exact te werken zoals het simpele <code>label</code>blok, het kan alleen ook de richting van
-                    het label bepalen. De richting van het label is gelijk aan de richting van de sprite die het label
-                    tekent, dus door de richting van de sprite aan te passen kan je die van het label aanpassen.
+                    Gebruik het basis <code>label</code>blok om code te ontwikkelen voor het <em>uitgebreidere</em> <code>label</code>blok 
+                    dat een label plaatst met de ingevoerde specificaties (tekst, grootte en richting).
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b9.png" height="45" alt="Geen Afbeelding">
                     <img src="../../afb/h3/l4/p1-o3.png" height="100" alt="Geen Afbeelding">
-                    <br>
+                    <br/><br/>
                     De invoer voor de richting van het <code>label</code>blok moet Snap<em>!</em> 's conventie voor
-                    richtingen volgen. Het volgt de wijzers van de klok alleen gaat het in plaats van 0 tot 12 van 0 tot
-                    360. (0<sup>o</sup> omhoog, 90<sup>o</sup> rechts, 180<sup>o</sup> omlaag, 270<sup>o</sup> links).
-                    Test je nieuwe <code>label</code> met deze vier richtingen en controleer dat je het resultaat eruit
+                    richtingen volgen. Met de klok mee van van 0 tot
+                    360 <sup>o</sup>: (0<sup>o</sup> omhoog, 90<sup>o</sup> rechts, 180<sup>o</sup> omlaag, 270<sup>o</sup> links.
+                    Test je nieuwe <code>label</code> met deze vier richtingen en controleer dat het resultaat eruit
                     ziet als de linkerhelft van de afbeelding hieronder.
-                    <br>
-                    <img class="indent" src="../../afb/h3/l4/p1-o4.png" height="250" alt="Geen Afbeelding">
+                    <br/><br/>
+                    <img class="indent" src="../../afb/h3/l4/p1-o4.png" height="250" alt="Geen Afbeelding"><br/><br/>
                 </li>
 
                 <li>
@@ -159,64 +147,62 @@
                     gegeven breedte en hoogte) tekenen vanaf de huidige locatie met een label onder de staaf.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b11.png" height="45" alt="Geen Afbeelding">
-                    <img class="indent" src="../../afb/h3/l4/p1-o5.png" height="200" alt="Geen Afbeelding">
+                    <img class="indent" src="../../afb/h3/l4/p1-o5.png" height="200" alt="Geen Afbeelding"><br/><br/>
 
                     <div class="endnote">
-                        Je wil misschien weer even naar je eerdere
-                        <a href="../hoofdstuk-2/H2L4P1.html">Bakstenen muur</a>
-                        project kijken om te herhalen hoe je staven van een gegeven dikte kan tekenen met de pen.
-                        Je hoeft niet het <code>maak einde van de lijn</code>blok te importeren van dat project maar
-                        zorg ervoor dat "Rechte lijnuiteinden" geselecteerd is in het Instellingen-menu om rechte staven
-                        te tekenen. Je kan hieronder zien het verschil ziet als je "Rechte lijnuiteinden" aan zet.
-                        <br>
+                        Je wilt misschien weer even naar je eerdere <a href="../hoofdstuk-2/H2L4P3.html">Bakstenen muur</a> 
+                        project kijken om te herhalen hoe je staven van een bepaalde dikte kan tekenen met de pen.
+                        Je hoeft van dat project niet het <code>maak einde van de lijn</code>blok te importeren, maar
+                        zorg ervoor dat 'Rechte lijn uiteinden' geselecteerd is in het Instellingen-menu om rechte staven
+                        te tekenen. Hieronder zie je het verschil tussen 'Rechte lijn uiteinden' aan/uit.
+                        <br/><br/>
                         <img class="indent" src="../../afb/h3/l4/p1-o6.png" height="200" alt="Geen Afbeelding">
                         <img class="indent" src="../../afb/h3/l4/p1-o7.png" height="100" alt="Geen Afbeelding">
-                        <img src="../../afb/h3/l4/p1-o8.png" height="120" alt="Geen Afbeelding">
+                        <img src="../../afb/h3/l4/p1-o8.png" height="120" alt="Geen Afbeelding"><br/><br/>
                     </div>
                 </li>
 
                 <li>
-                    Ontwikkel code voor het <code>teken staven</code>blok, dat een serie van gelabelde staven moet
-                    tekenen met een bepaalde breedte en hoogte. De serie moet links starten en doorgaan naar rechts.
-                    Om de staven en labels goed neer te zetten heb je waarschijnlijk de globale variabelen
-                    <var>x-oorsprong</var> en <var>y-oorsprong</var> nodig.
+                    Ontwikkel code voor het <code>teken staven</code> blok, dat een reeks van gelabelde staven met een bepaalde 
+                    breedte en hoogte moet tekenen. De reeks moet links starten en naar rechts doorlopen. Om de staven en labels 
+                    op de juiste positie te krijgen heb je waarschijnlijk de globale variabelen <var>x-oorsprong</var> en 
+                    <var>y-oorsprong</var> nodig.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b12.png" height="60" alt="Geen Afbeelding">
-                    <img class="indent" src="../../afb/h3/l4/p1-o9.png" height="250" alt="Geen Afbeelding">
+                    <img class="indent" src="../../afb/h3/l4/p1-o9.png" height="250" alt="Geen Afbeelding"> <br /><br />
 
                     <div class="narrower">
-                        Merk op dat door de maximale staafhoogte mee te geven, de hoogtes van alle staven berekend
-                        kunnen worden in proportie tot deze maximale staafhoogte. Met de berekening hieronder kan je de
-                        staafhoogte van ieder land berekenen:
+                        Merk op dat met een maximale staafhoogte, de hoogtes van alle staven berekend kunnen worden in verhouding 
+                        tot deze maximale staafhoogte. Met de berekening hieronder kan je de staafhoogte van ieder land berekenen:
 
                         <span class="katex-block">
                             \frac{\text{staafhoogte land}}{\text{maximale staafhoogte}} =
                             \frac{\text{datawaarde land}}{\text{maximale datawaarde}}
                         </span>
 
-                        Als de maximale staafhoogte bijvoorbeeld 240 is en je wil weten hoe hoog de staaf van de V.S.
-                        moet zijn, dan moet je eerste de hoogste waarde in de dataset vinden, dat is hier 8715 (van
-                        China). Daarna doe je de volgende berekening:
+                        Als de maximale staafhoogte bijvoorbeeld 240 is en je wilt weten hoe hoog de staaf van de VS
+                        moet zijn, zoek dan eerst de grootste waarde in de dataset, dat is hier 8715 (China) en voer dan de volgende 
+                        berekening uit:
 
                         <span class="katex-block">
-                            {\text{staafhoogte V.S.}} =
-                            {\text{maximale staafhoogte}} \cdot \frac{\text{datawaarde V.S.}}
+                            {\text{staafhoogte VS}} =
+                            {\text{maximale staafhoogte}} \cdot \frac{\text{datawaarde VS}}
                             {\text{maximale datawaarde}} =
                             {\text{240}} \cdot \frac{\text{5491}}{\text{8715}}\approx {\text{151}}
                         </span>
 
-                        Om de maximale waarde te vinden, moet je eerst de lijst met waardes krijgen en dan het
+                        Om de maximale waarde te vinden, moet je eerst een lijst met waarden opstellen en dan het
                         <code>max van lijst</code>blok gebruiken. Het blok hieronder gebruikt het blok
-                        <code>waarde van data-record</code> om een lijst met alle waardes uit <var>data-lijst</var> te
+                        <code>waarde van data-record</code> om een lijst met alle waarden uit <var>data-lijst</var> te
                         halen.
                         <br>
-                        <img class="indent" src="../../afb/h3/l4/p1-b13.png" height="45" alt="Geen Afbeelding">
-                    </div>
+                        <img class="indent" src="../../afb/h3/l4/p1-b13.png" height="45" alt="Geen Afbeelding"><br/><br/>
+                    </div><br/>
 
                 </li>
 
                 <li>
-                    Ontwikkel code voor het <code>label verticale as</code>blok zodat het labels onder de verticale as
+                    Ontwikkel code voor het <code>label verticale as</code>blok, zodat het labels onder de verticale as
                     zet, gebaseerd op bepaalde invoer. Voor het gemak mag je aannemen dat de labels de verticale as
                     altijd in 10 gelijke delen splitst (met behulp van 11 markeringen) zoals hieronder:
                     <br>
@@ -226,91 +212,87 @@
 
                 <li>
                     Nu ben je klaar om alles samen te voegen en code te ontwikkelen voor het
-                    <code>Staafdiagram</code>tekenblok met als invoer een <var>datalijst</var>. Bouw het blok hieronder
+                    <code>Staafdiagram</code> tekenblok met als invoer een <var>datalijst</var>. Bouw het blok hieronder
                     en vul zelf de lege vakken in.
-                    <br>
+                    <br/><br/>
                     <div class="sidenote"> Je kan elk blok gebruiken dat je nodig hebt in de definitie van
                         <code>Staafdiagram</code>.
                     </div>
-                    <img class="indent" src="../../afb/h3/l4/p1-b15.png" height="180" alt="Geen Afbeelding">
-                </li>
+                    <img class="indent" src="../../afb/h3/l4/p1-b15.png" height="190" alt="Geen Afbeelding">
+                </li><br/>
 
                 <li>
                     Als alles klaar is dan zou de volgende code, met een paar extra labels voor de diagramtitel, een
                     staafdiagram moeten produceren zoals hieronder:
-                    <br>
+                    <br/><br/>
                     <img class="indent" src="../../afb/h3/l4/p1-b16.png" height="45" alt="Geen Afbeelding">
-                    <br>
+                    <br/><br/>
                     <div class="sidenote">
-                        Bedenk dat de laagste waarde op de verticale as <em><strong>nul</strong></em> moet zijn opdat
-                        het staafdiagram een correcte datavisualisatie is.
-                        Als je bijvoorbeeld de verticale as zou starten bij 5000 dan zou het lijken alsof China veel
-                        vervuilender is dan de V.S.
-                        <br>
-                        Over het algemeen moet je heel sceptisch zijn over diagrammen die niet starten bij
-                        <em><strong>nul</strong></em>.
+                        Bedenk dat de laagste waarde op de verticale as <em>nul</em> moet zijn om het staafdiagram 
+                        een correcte datavisualisatie te laten vormen. Als je bijvoorbeeld de verticale as zou starten 
+                        bij 5000 dan zou het lijken alsof China veel vervuilender is dan de VS.
+                        <br/><br/>
+                        <strong>! Wees in het algemeen sceptisch over diagrammen die niet starten bij nul...</strong>
                     </div>
-                    <img class="indent" src="../../afb/h3/l4/p1-o11.png" height="300" alt="Geen Afbeelding">
+                    <img class="indent" src="../../afb/h3/l4/p1-o11.png" height="300" alt="Geen Afbeelding"><br/><br/>
                 </li>
                 <li>
                     Je programma moet algemeen genoeg zijn om ook bruikbaar te zijn voor een andere dataset. Er zit nog
-                    een andere dataset in dit project genaamd "CO2 Uitstoot per capita":
-                    <br>
+                    een andere dataset in dit project genaamd 'CO2 Uitstoot per capita':
+                    <br/><br/>
                     <img class="indent" src="../../afb/h3/l4/p1-b17.png" height="45" alt="Geen Afbeelding">
-                    <br>
+                    <br/><br/>
                     <img class="indent" src="../../afb/h3/l4/p1-o12.png" height="300" alt="Geen Afbeelding">
-
+                    <br/><br/> 
                     <div class="endnote">
-                        "per capita" betekent "per persoon". Om de uitstoot per capita te berekenen moet je dus de
-                        totale
-                        CO<sub>2</sub>-uitstoot delen door het aantal inwoners. Hieronder staat een voorbeeld met China:
-                        <br>
+                        'Per capita' betekent 'per hoofd van de bevolking'. Om de uitstoot per capita te berekenen moet je dus de
+                        totale CO<sub>2</sub>-uitstoot delen door het aantal inwoners. Hieronder staat een voorbeeld met China:
+                        <br/><br/>
                         <span class="katex-block">
                             \frac{\text{8715 Miljoen ton}}{\text{1.337 Miljard personen}} =
                             {\text{6.52 tonnen per persoon}}
                         </span>
-                        Deze waardes zijn al berekend in de dataset <code>CO<sub>2</sub> Uitstoot per capita
-                            Data</code>.
+                        Deze waarden staan al in de dataset <code>CO<sub>2</sub> Uitstoot per capita Data</code>.
+                        <br/><br/>
                     </div>
-
-                    <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding">
-
                 </li>
+                <br/><br/>
                 <li>
-                    Vergelijk samen met je partner de twee staafdiagrammen. Welk inzicht geeft ieder diagram over de
-                    CO<sub>2</sub>-uitstoot? Is de een beter dan de ander?
-                    <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding"></li>
-            </ol>
+                    Vergelijk samen met je partner de twee staafdiagrammen. <br/>
+                    Welk inzicht geeft ieder diagram over de CO<sub>2</sub>-uitstoot? Is de een beter dan de ander?
+                </ol>
+                <br/>
+                    <img class="imageLeft" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding">
+                    <br/><br/><br/>
+                    
         </div>
 
         <div class="ifTime">
             <ol start="13">
                 <li>
-                    <strong>Dataverwerking:</strong>
+                    <strong>Dataverwerking</strong><br />
                     Kijk in het Variabelenpalet om het <code>Land-BBP-Bevolking Data</code>blok te vinden.
-                    Als je naar de inhoud kijkt, vind je een lijst van lijsten met data over het BBP
+                    Als je de inhoud bekijkt, vind je een lijst van lijsten met data over het BBP
                     (<a href="https://nl.wikipedia.org/wiki/Bruto_binnenlands_product" target="_blank"> Bruto
                         Binnenlands Product</a>) en bevolkingsgrootte voor ieder land dat je hebt bestudeerd in dit
-                    project.
-
-                    <em>Verwerk</em> de data op een manier dat je er een staafdiagram mee kan maken met het BBP
-                    <strong>per capita</strong> voor ieder land.
-                    <br>
+                    project. Verwerk de data op een manier dat je er een staafdiagram mee kan maken met het BBP
+                    per capita voor ieder land.
+                    <br/><br/>
                     <img class="indent" src="../../afb/h3/l4/p1-b18.png" height="200" alt="Geen Afbeelding">
-                    <br>
+                    <br/><br/>
                     Klik hier voor een <a href="#hint-2" data-toggle="collapse" class="collapsed">hint</a> over het snel
                     <em>verwerken</em> van data met behulp van de functie <code>map</code>.
                     <div id="hint-2" class="collapse">
                         Deze blokken helpen misschien:
                         <br>
                         <img class="indent" src="../../afb/h3/l4/p1-b19.png" height="100" alt="Geen Afbeelding">
-
+                        <br/><br/>
                     </div>
                 </li>
                 <li>
                     Verzamel nu zelf data in je klas of van het internet over een onderwerp dat je interessant vindt en
                     dat makkelijk gevisualiseerd kan worden in een staafdiagram. Gebruik je Snap<em>!</em>-programma om
-                    de data te visualiseren. Vertel wat je gedaan hebt aan je klasgenoten.
+                    de data te visualiseren. Vertel wat je gedaan hebt aan je klasgenoten.<br/><br/>
                 </li>
             </ol>
         </div>
@@ -319,18 +301,17 @@
             <ol type="A">
                 <li>
                     Soms is het handiger om je staafdiagram te presenteren met horizontale staven in plaats van
-                    verticale. Pas je code aan zodat het een invoer neemt die het type diagram aangeeft (horizontaal of
-                    verticaal) en ook zo'n soort diagram genereert.
-                    <br>
-                    <img class="indent" src="../../afb/h3/l4/p1-o13.png" height="300" alt="Geen Afbeelding">
+                    verticale. Pas je code aan zodat deze een invoer krijgt die aangeeft welk type diagram (horizontaal of
+                    verticaal) genereerd moet worden. <br /><br />
+                    <img class="indent" src="../../afb/h3/l4/p1-o13.png" height="300" alt="Geen Afbeelding"><br /><br />
                 </li>
                 <li>
-                    Histogrammen laten <em>numerieke</em> data zien gegroepeerd in bereiken (vaal "bins" genoemd,
-                    "emmers" in het Engels) en geplot als staven. Het histogram hieronder laat bijvoorbeeld het aantal
+                    Histogrammen laten <em>numerieke</em> data zien die gegroepeerd zijn in bereiken (vaak 'bins' genoemd, emmers)
+                    en die geplot zijn als staven. Het histogram hieronder laat bijvoorbeeld het aantal
                     studenten zien in iedere leeftijdsgroep op een zomerkamp. Leer over histogrammen en maak een
-                    datavisualisatie-programma in Snap<em>!</em> om histogrammen te laten zien.
-                    <br>
-                    <img class="indent" src="../../afb/h3/l4/p1-o14.png" height="250" alt="Geen Afbeelding"></li>
+                    datavisualisatie-programma in Snap<em>!</em> om histogrammen weer te geven. <br /><br />
+                    <img class="indent" src="../../afb/h3/l4/p1-o14.png" height="250" alt="Geen Afbeelding"><br /><br />
+                </li>
             </ol>
         </div>
     </div>
