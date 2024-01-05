@@ -20,18 +20,17 @@
     <div class="full">
         <h2>Herkennen van gewonnen en gelijkspel.</h2>
         <div class="learn">
-            <p><strong>Op deze pagina</strong> ga je je Boter-Kaas-en-Eierenproject programmeren zodat overwinning en
+            <p><strong>Op deze pagina</strong> ga je je Boter-Kaas-en-Eieren project zo programmeren dat overwinning en
                 gelijkspel herkend worden.</p>
         </div>
 
         <h3>Het opslaan van alle manieren om te winnen</h3>
         <p>
             Voordat we een manier bedenken om een gewonnen spel te herkennen, moeten we eerst vaststellen op welke
-            manier je kan winnen. Dit doen we door
-            elke mogelijkheid voor een gewonnen spel op te slaan door middel van een lijst van drie posities (een
-            <em>drietal</em>). Dit winnende drietal kan er bijvoorbeeld uit zien als
-            <img height="40" src="../../afb/h3/l2/p2-b1.png" alt="Geen Afbeelding"> want het gewonnen drietal is in de
-            3<sup>e</sup>, 5<sup>e</sup>, en 7<sup>e</sup>
+            manier je kan winnen. Dit doen we door elke mogelijkheid voor een gewonnen spel op te slaan door middel van 
+            een lijst van drie posities. Dit winnende drietal kan er bijvoorbeeld uit zien als
+            <img height="40" src="../../afb/h3/l2/p2-b1.png" alt="Geen Afbeelding">, want het gewonnen drietal staat op de
+            3<sup>e</sup>, 5<sup>e</sup> en 7<sup>e</sup>
             positie:<br />
             <img class="indent noshadow" src="../../afb/h3/l2/p2-o1.png" alt="Geen Afbeelding"><br />
         </p>
@@ -53,47 +52,48 @@
 
         <div class="forYouToDo">
             <ol start="2">
-                <li>Open je project <strong>H3L2-BoterKaasEnEieren</strong>.</li>
+                <li>Open je project <strong>H3L2-BoterKaasEieren</strong>.</li>
                 <img class="imageRight" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" />
                 <li>
                     Maak een resultaatblok aan dat alle gewonnen drietallen rapporteert. Het ziet er ongeveer zo
-                    uit:<br />
+                    uit:<br /><br />
                     <img class="indent" src="../../afb/h3/l2/p2-b2.png" alt="Geen Afbeelding" />
+                    <br /><br />
                 </li>
             </ol>
         </div>
 
-        <h3>Één manier om te winnen controleren</h3>
+        <h3>Een manier om te winnen controleren</h3>
         <p> We hebben een manier nodig om te achterhalen of er werkelijk een gewonnen drietal is. We gebruiken
             <code>map</code> om iedere positie te checken van een drietal om te kijken of een van de twee spelers wint
             met dat drietal.
         </p>
 
         <div class="endnote">
-            <p> Je hebt geleerd over <code>map</code> in
-                <a href="../hoofdstuk-3/H3L1P4.html"> Hoofdstuk 3 Les 1 Pagina 4: Transformeren van alle items in een
+            <p> Je hebt geleerd over <code>map</code> in Hoofdstuk 3 Les 1 Pagina 4:
+                <a href="../hoofdstuk-3/H3L1P4.html"> Transformeren van alle items in een
                     lijst</a>.
             </p>
-            <p> <code>map</code> past de functie in de grijze ring toe op elk item in de invoerlijst, en rapporteert
+            <p> <code>Map</code> past de functie in de grijze ring (rond het groene blok) toe op elk item in de invoerlijst, en rapporteert
                 een lijst met alle resultaten.<br />
-                <img height="100" class="indent" src="../../afb/h3/l1/blocks/p4-b2.png" alt="Geen Afbeelding" />
+                <img height="120" class="indent" src="../../afb/h3/l1/blocks/p4-b2.png" alt="Geen Afbeelding" />
             </p>
             <p> Bedenk dat het lege invoervak van de functie in de grijze ring de plek is waar een item uit de lijst
-                komt als de functie wordt uitgevoerd.
+                terecht komt als de functie wordt uitgevoerd.
             </p>
         </div>
 
         <div class="forYouToDo">
             <ol start="4">
                 <li>Klik op <img src="../../afb/icons/green-flag_button.png" alt="Geen Afbeelding" /> om
-                    een nieuw spel te starten. Speel een spel en <em>laat <strong>X</strong> expres winnen</em>. </li>
+                    een nieuw spel te starten. Speel een spel en laat <strong>X</strong> expres winnen. </li>
                 <li>
-                    Bouw het blok hieronder na en kijk wat het rapporteert.<br />
+                    Bouw het blok hieronder na en kijk wat het rapporteert.<br /><br />
                     <img class="indent" src="../../afb/h3/l2/p2-b3.png" alt="Geen Afbeelding">
                     <br />
 
                     <div class="endnote">
-                        <a href="#hint-map-item" data-toggle="collapse">Hoe werkt <code>map</code> hier?</a>
+                        <a href="#hint-map-item" data-toggle="collapse">Hoe werkt <code>map</code> hier?</a> Klik voor een hint...
 
                         <div id="hint-map-item" class="collapse">
                             <p>Deze <code>map</code> werkt hetzelfde als het <code>voeg samen</code>voorbeeld hierboven,
@@ -116,55 +116,60 @@
                             </p>
                         </div>
                     </div>
+                    <br />
                 </li>
                 <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                    <br />
                     Wat zegt het resultaat van dit blok je over de staat waarin het spel zich bevindt?
                 </li>
+                <br /><br />
                 <li> Als <code>{1, 2, 3}</code> niet het drietal is waarin <strong>X</strong> het spel heeft gewonnen,
                     vervang dan de lijst in <code>map</code> met het werkelijke winnende drietal en klik opnieuw op het
                     blok.
                 </li>
+                <br />
                 <li>
-                    Gebruik dit idee om een <img src="../../afb/h3/l2/p2-b5.png" alt="Geen Afbeelding">-blok te maken
-                    dat een mogelijk winnend drietal (een drietal zoals
-                    <img src="../../afb/h3/l2/p2-b6.png" alt="Geen Afbeelding">) als invoer heeft en
-                    een lijst rapporteert met wat er in die drie posities staat.
+                    Gebruik dit idee om een <img src="../../afb/h3/l2/p2-b5.png" alt="Geen Afbeelding"> blok te maken
+                    dat een mogelijk winnend drietal (zoals <img src="../../afb/h3/l2/p2-b6.png" alt="Geen Afbeelding">) 
+                    als invoer heeft en een lijst rapporteert met wat er in die drie posities staat.
 
                     <div class="endnote"> Je hebt geleerd hoe je het invoertype
-                        (<img class="inline" src="../../afb/h3/l2/p2-o3.png" alt="Geen Afbeelding">) moet specificeren
-                        in <a href="../hoofdstuk-2/H2L2P1.html"> Hoofdstuk 2 Les 2 Pagina 1: Verwerken van elk item in
+                        <img class="inline" src="../../afb/h3/l2/p2-o3.png" alt="Geen Afbeelding"> moet specificeren
+                        in Hoofdstuk 2 Les 2 Pagina 1: <a href="../hoofdstuk-2/H2L2P1.html"> Verwerken van elk item in
                             een lijst</a>.
                     </div>
                 </li>
                 <li>
-                    <img class="imageRight" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" />
-                    Speel een ander spel waar speler O wint en test je
-                    <code>status van drietal</code>blok met het winnende drietal.
+                    Speel een nieuw spel waarin speler O wint en test je <code>status van drietal</code>blok met het winnende drietal.
+                    <br />  
                     Fix de bugs, als die er zijn.
+                    <br />  <br />
+                    <img class="imageLeft" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" />
+                 
                 </li>
             </ol>
+            <br />  <br />   <br /> 
         </div>
 
         <h3>Alle manieren om te winnen controleren</h3>
-        <p>Je hebt net een blok gebouwd dat voor 1 drietal zal laten zien of een speler alle drie van de posities heeft
-            gekozen.
-            Nu ga je een blok, <code>status van alle winnende drietallen</code> bouwen om diezelfde functie op
+        <p>Je hebt net een blok gebouwd dat voor één drietal zal laten zien of een speler alle drie de posities heeft
+            gekozen. Nu ga je een blok, <code>status van alle winnende drietallen</code> bouwen om diezelfde functie op
             <em>alle</em> drietallen toe te passen waarmee een speler kan winnen. Daarna zal je dit blok gebruiken om te
             controleren of een van die drietallen drie zetten van dezelfde speler bevat.
         </p>
         <p>
-            Hieronder heeft Speler O bijvoorbeeld gewonnen en het <code>status van alle winnende drietallen</code>blok
+            Hieronder heeft Speler O bijvoorbeeld gewonnen en het <code>status van alle winnende drietallen</code> blok
             bevat de status van ieder drietal. De computer kan dit blok gebruiken om te controleren of een winnend
-            drietal alleen X of alleen O bevat.<br />
+            drietal alleen X of alleen O bevat.<br /><br />
             <img class="indent noshadow" src="../../afb/h3/l2/p2-o4.png" alt="Geen Afbeelding" />
             <img class="indent noshadow" src="../../afb/h3/l2/p2-o5.png" alt="Geen Afbeelding" />
         </p>
 
         <div class="endnote">
             De volgorde van je drietallen of de nummering van de posities in je project is misschien anders.
-            Dit is prima, zolang je project werkt.
+            Dit is prima, zolang je project maar werkt. 
         </div>
-
+        <br />
         <div class="forYouToDo">
             <ol start="10">
                 <li>Gebruik <code>map</code> samen met een paar andere blokken die je gebouwd hebt om
@@ -173,21 +178,28 @@
                 </li>
 
                 <div class="endnote">
-                    <a href="#hint-status-all" data-toggle="collapse">Klik hier voor een hint voor het werken met
-                        <code>map</code>.</a>
+                    <a href="#hint-status-all" data-toggle="collapse">Klik hier voor een hint voor het werken met</a> 
+                        <code>map</code>.
                     <div id="hint-status-all" class="collapse">Wanneer je <code>map</code> gebruikt, denk dan na over:
                         <ol>
-                            <li>Welke functie je probeert toe te passen? Dat moet in de grijze ring.</li>
-                            <li>Op welke data pas je de functie toe? Dat is de lijst waarop je <code>map</code> toepast.
+                            <li>Welke functie probeer je toe te passen? Dat moet in de grijze ring staan.</li>
+                            <li>Op welke gegevens voer je dei functie toe? Dat is de lijst waarop je <code>map</code> toepast.
                             </li>
                         </ol>
-                        Je wilt hier de status van ieder winnend drietal weten.
+                        Je wilt in dit geval de status van ieder winnend drietal weten.
                     </div>
                 </div>
 
-                <div class="sidenoteBig">
-                    <a href="#hint-won" data-toggle="collapse">Klik hier voor een hint voor het bouwen van
-                        <code>gewonnen?</code>.</a>
+                <li>Maak nu een <img height="30" src="../../afb/h3/l2/p2-b7.png" alt="Geen Afbeelding">blok dat de
+                    letter <strong>X</strong> of <strong>O</strong> als invoer neemt en <code>waar</code> rapporteert
+                    alleen als die speler gewonnen heeft.
+                </li>
+                <li>Pas je programma aan zodat wanneer een speler het spel wint, het programma dit aan de speler
+                    <em>vertelt</em>.
+                </li>
+                <div class="endnote">
+                    <a href="#hint-won" data-toggle="collapse">Klik hier voor een hint voor het bouwen van</a> 
+                        <code>gewonnen?</code>
                     <div id="hint-won" class="collapse">
                         <p>Druk het uit in woorden: wat wil je precies controleren?</p>
                         <p>Zijn er blokken die je daarmee kunnen helpen?</p>
@@ -198,53 +210,46 @@
                         </p>
                     </div>
                 </div>
-
-                <li>Maak nu een <img height="30" src="../../afb/h3/l2/p2-b7.png" alt="Geen Afbeelding">blok dat de
-                    letter <strong>X</strong> of <strong>O</strong> als invoer neemt en <code>waar</code> rapporteert
-                    alleen als die speler gewonnen heeft.
-                </li>
-
-                <img class="imageRight" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" />
-
-                <li>Pas je programma aan zodat wanneer een speler het spel wint, het programma dit aan de speler
-                    <em>vertelt</em>.
-                </li>
                 <li>Speel het spel een aantal keer om te controleren of het werkt en fix bugs als die er zijn. Zorg
                     ervoor dat iedere speler minstens één keer wint.
-                </li>
+                </li><br />
             </ol>
-        </div>
+                <img class="imageLeft" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" />
+            <br /><br /> <br />
+        </div> 
 
         <h3>Gelijkspel controleren</h3>
-        <p>De definitie van een gelijkspel is dat er geen lege vakken meer zijn en geen enkele speler gewonnen heeft.
+        <p>De definitie van een gelijkspel is dat er geen lege vakjes meer zijn en geen van beide spelers gewonnen heeft.
         </p>
 
         <div class="forYouToDo">
             <ol start="14">
                 <li>
-                    <div class="sidenoteBig">
-                        <a href="#hint-tie-contains" data-toggle="collapse">Klik hier voor een hint voor het controleren
-                            voor gelijkspel.</a>
-                        <div id="hint-tie-contains" class="collapse">
-                            <img height="40" src="../../afb/h3/l2/p2-b8.png" alt="Geen Afbeelding" /></div>
-                    </div>
-                    Ontwikkel een manier om te controleren of er een gelijkspel is, als dat zo is zorg dan dat het
-                    programma dit aan de spelers laat weten.
+                    Ontwikkel een manier om te controleren of er een gelijkspel is en als dat zo is, zorg dan dat het 
+                    programma de spelers daarvan op de hoogte stelt.
                 </li>
-                <li>Speel het spel een paar keer om de test voor gelijkspel te controleren en fix bugs als die er zijn.
+                <div class="endnote">
+                    <a href="#hint-tie-contains" data-toggle="collapse">Klik hier voor een hint voor het controleren
+                        voor gelijkspel.</a>
+                    <div id="hint-tie-contains" class="collapse">
+                        <img height="40" src="../../afb/h3/l2/p2-b8.png" alt="Geen Afbeelding" /></div>
+                </div>
+                <li>Speel het spel een paar keer om de gelijkspelcontrole te testen en fix bugs als die er zijn.
                 </li>
 
-                <div class="sidenoteBig">
-                    <p>Je kan verder werken aan dit project in <a href="../hoofdstuk-5/H5O1P1.html"> Hoofdstuk 5,
-                            Optioneel Project: Je boter-kaas-en-eierenproject herzien</a>.</p>
-                </div>
+               
 
                 <li>
                     Waarom maakt de volgorde van de tests (voor een winnaar of gelijkspel) uit?
                     <img src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
                 </li>
                 <li><img class="inline" src="../../afb/icons/SlaOpLater.png" alt="Geen Afbeelding" /></li>
+                <div class="endnote">
+                    <p>Je kan verder werken aan dit project in Hoofdstuk 5, Optioneel Project: <a href="../hoofdstuk-5/H5O1P1.html"> 
+                            Je boter-kaas-en-eieren project herzien</a>.</p>
+                </div>
             </ol>
+            <br />
         </div>
 
         <div class="ifTime">
@@ -258,14 +263,13 @@
         <div class="takeItFurther">
             <img class="imageRight" src="../../afb/icons/UiterUitagend-mini.png" alt="Geen Afbeelding" />
             <ol type="A">
-                <li> Je programma kan slimmer gelijkspel ontdekken. Als er nog maar één leeg vak op het bord is en de
-                    speler die de volgende keer aan zet is niet zou winnen door dat vak te vullen, dan is er al sprake
-                    van gelijkspel. De uitdaging is dus dat je moet controleren voor een winnaar op een bord dat niet
-                    het huidige <var>bord</var> is.
+                <li> Je programma kan slimmer gelijkspel ontdekken. Als er nog maar één leeg vakje op het bord is en de
+                    speler die de volgende keer aan zet is niet zou winnen, dan is er al sprake van gelijkspel. De uitdaging 
+                    hier is dat je moet testen of je wint op een bord dat niet het huidige <var>bord</var> is.
                 </li>
-                <li> In plaats van dat de sprite iets zegt zoals "X wint" is het veel leuker als je een dikke lijn
-                    tekent door de drie winnende vakjes. Dit is best lastig omdat wanneer er nu een winnaar is, je niet
-                    meer weet welk drietal daarvoor zorgde. Zorg dat je code leesbaar blijft.
+                <li> In plaats van dat de sprite iets zegt zoals 'X wint' is het veel leuker als je een dikke lijn
+                    tekent door de drie winnende vakjes. Dit is best lastig omdat op het moment dat er een winnaar is, je 
+                    tegelijk niet meer weet welk drietal daarvoor zorgde. Zorg dat je code leesbaar blijft.
                 </li>
             </ol>
         </div>
