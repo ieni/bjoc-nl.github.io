@@ -20,41 +20,39 @@
     <div class="full">
 
         <h2>Een diagram-app maken</h2>
-        <div class="learn"><strong>Op deze pagina</strong>, leer je hoe je waarden kunt schalen zodat je elke
-            dataset in het Snap <em>!</em>-speelveld kunt plotten. Blokken om de berekeningen uit te voeren, zijn al
+        <div class="learn"><strong>Op deze pagina</strong> leer je hoe je waarden kunt schalen zodat je in het Snap<em>!</em> 
+            speelveld een grafiek kunt maken van elke dataset. Blokken om de berekeningen uit te voeren, zijn al
             voor je geschreven, maar als je wilt, kan je ze onderzoeken om te zien hoe ze werken.
         </div>
         <p>
-            Een enkel punt plotten, als je zijn coördinaten hebt, kan je zo doen:
-            <br />
+            Het plotten van een enkel punt, gegeven zijn twee coördinaten, kan simpel dit zijn:
+            <br /><br />
             <img class="indent" src="../../afb/h3/l4/p2-b1.png" height="225" alt="Geen Afbeelding" />
         </p>
-        <p>Je kan dan een lijst datapunten plotten door een nieuw blok te maken met bijvoorbeeld de naam
-            <img src="../../afb/h3/l4/p2-b2.png" height="40" alt="Geen Afbeelding" />
-            net zoals je eerder gedaan hebt in Hoofdstuk 2 Les 2. De invoer van dit blok zou een lijst met datapunten
-            moeten zijn. Afhankelijk van het type diagram dat je wil, kan je de
-            punten wel of niet verbinden.
+        <p>Vervolgens kun je een lijst met gegevenspunten grafisch weergeven door een blok te verzinnen zoals
+            <img src="../../afb/h3/l4/p2-b2.png" height="40" alt="Geen Afbeelding" />. <br />
+            Je deed dit eerder in <a href="../hoofdstuk-2/H2L2P1.html">Hoofdstuk 2 Les 2</a>. Afhankelijk van het type diagram dat je wilt 
+            hebben, kan je de punten wel of niet verbinden.
         </p>
-        <p> Dat lijkt alles te zijn wat je nodig hebt. Maar wat als de <em>schaal</em> van je data niet past op het
-            Snap<em>!</em>-speelveld (tussen -240 en 240 in de <em>x</em>)-richting en tussen -180 en 180 in de
-            <em>y</em>-richting)? Wat als je bijvoorbeeld de populariteit van een babynaam over tijd wil plotten, zoals
-            hieronder?
-            <br />
+        <p> Dat is het ongeveer. Maar wat als de schaal van je data niet past op het Snap<em>!</em> speelveld? Dus  
+            tussen -240 en 240 in de x-richting en tussen -180 en 180 in de y-richting? 
+            Wat als je bijvoorbeeld de populariteit van een babynaam over een bepaalde periode wil plotten, zoals hieronder?
+            <br /><br />
             <img class="indent" src="../../afb/h3/l4/p2-o1.png" height="250" alt="Geen Afbeelding" />
             <img src="../../afb/h3/l4/p2-o2.png" height="250" alt="Geen Afbeelding" />
+            <br /><br />
         </p>
-        <p> De jaren kunnen niet geplot worden op de horizontale as omdat de waardes buiten Snap<em>!</em>'s speelveld
-            vallen (1930-2010). De percentages 0, 0.1, 0.2, 0.3 etc. liggen zo dicht bij elkaar dat ze allemaal
+        <p> De jaren kunnen niet geplot worden op de horizontale as, omdat de waarden helemaal buiten het Snap<em>!</em> 
+            speelveld vallen (1930-2010). En de percentages 0, 0,1, 0,2, 0,3 etc. liggen zo dicht bij elkaar, dat ze allemaal
             hetzelfde lijken. Je zou zo het verschil in populariteit tussen 1960 en 1980 niet kunnen zien.
-            We hebben een manier nodig om te <em>wisselen</em> tussen Snap<em>!</em>
-            <strong>speelveld-coördinaten</strong> en de echte waardes van een set datapunten, die we
-            <strong>diagram-coördinaten</strong> zullen noemen, .
+            We hebben een manier nodig om te wisselen tussen Snap<em>!</em> speelveld-coördinaten 
+            en de echte waarden van een set datapunten, die we <em>diagram-coördinaten</em> zullen noemen.
         </p>
-
-        <div class="takeNote"> Een goede diagrammaker moet de gebruiker de <strong>schaal</strong> van het scherm laten
-            bepalen, om aan te geven waar de aandacht op moet worden gericht; waar moet worden ingezoomd.
+        <br />
+        <div class="takeNote"> Een goede diagram-app moet de gebruiker de schaal van het scherm laten
+            instellen om te bepalen waar de focus ligt. 
         </div>
-
+        <br />
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
@@ -62,114 +60,99 @@
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H3L4-DiagramApp">
                         <img class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
                     <br />
-                    Het bevat een paar blokken die al voor je gemaakt zijn.
+                    Het bevat een paar blokken die al voor je gemaakt zijn.<br /><br />
                     <ol>
-                        <li>Klik op het <code>maak diagramschaal</code>blok met de invoer die er al is (-2, 4, 30, 300)
-                            om te zien wat het doet. Naast het tekenen op het scherm, maakt het het ook een aantal
-                            variabelen die je andere blokken nodig zullen hebben zodat ze de afmetingen van het scherm
-                            weten.
+                        <li>Klik op het <code>maak diagramschaal</code>blok met de invoer die er al is (-2, 4, 30, 300),
+                            om te zien wat het doet. Naast het tekenen op het scherm, maakt het ook een aantal
+                            variabelen die jouw andere blokken nodig hebben, zodat ze ook beoogde schermafmetingen kennen. <br /> <br />
                         </li>
                         <li>
-                            De volgende twee blokken nemen als invoer de <strong><em>diagram</em></strong>-coördinaten
-                            van een punt en rapporteren de <em>speelveld</em></strong>-coördinaten die daarbij horen.
+                            De volgende twee blokken nemen als invoer de <em>diagram</em>-coördinaten
+                            van een punt en rapporteren de <em>speelveld</em>-coördinaten die daarbij horen.
 
                             Experimenteer met de invoer van deze blokken zodat ze 0 rapporteren.
                             <br />
                             <img src="../../afb/h3/l4/p2-b3.png" height="40" alt="Geen Afbeelding" />
                             <img src="../../afb/h3/l4/p2-b4.png" height="40" alt="Geen Afbeelding" />
                             <br />
-                            Hoe is de invoer gerelateerd aan de diagramschaal?
+                            Hoe is de invoer gerelateerd aan de diagramschaal? <br /> <br />
                         </li>
                         <li> Gebruik <img src="../../afb/h3/l4/p2-b5.png" height="50" alt="Geen Afbeelding" /> met
-                            dezelfde invoer. Waar wordt je sprite geplaatst?
+                            dezelfde invoer. <br />
+                            Waar wordt je sprite geplaatst? <br /> <br />
                         </li>
                         <li> Zonder de positie van de sprite te veranderen, klik op
                             <img src="../../afb/h3/l4/p2-b6.png" height="40" alt="Geen Afbeelding" />
-                            en leg uit wat er gebeurt.
+                            en leg uit wat er gebeurt. <br /> <br />
                         </li>
-
-
-                        <li> Gebruik het <img src="../../afb/h3/l4/p2-b7.png" height="50" alt="Geen Afbeelding">blok om
-                            een script te maken dat de sprite zijn correcte
-                            <strong><em>diagram</em></strong>-coördinaten (niet zijn
-                            <strong><em>speelveld</em></strong>-coördinaten) laat zeggen van waar hij geplaatst is.
-                            Beweeg de sprite naar een aantal plekken op het speelveld om het script te testen.
+                        <li> Gebruik het <img src="../../afb/h3/l4/p2-b7.png" height="60" alt="Geen Afbeelding">blok om
+                            een script te maken dat de sprite vraagt zijn <em>diagram</em>-coördinaten te zeggen als hij ergens wordt neergezet.
+                            Beweeg de sprite naar een paar verschillende plekken op het speelveld om het script te testen. <br /><br />
                         </li>
 
                         <div class="endnote">
-                            Voor dit diagram moet een sprite in de rechter onderhoek van het speelveld (4, 30) zeggen,
-                            niet (240,-180). Om het gehele display van coördinaten te zien moet je het
-                            <img src="../../afb/h3/l4/p2-b8.png" height="30" alt="Geen Afbeelding" />blok
-                            gebruiken (in het Functiespalet, gebouwd voor dit project) om de coördinaten af te ronden
-                            naar het aantal decimalen dat je wil zien.
-                            Een display van
-                            <img src="../../afb/h3/l4/p2-o3.png" height="55" alt="Geen Afbeelding">
-                            is logischer dan
-                            <img src="../../afb/h3/l4/p2-o4.png" height="73" alt="Geen Afbeelding">
-                            in deze context.
+                            Voor dit diagram moet een sprite in de rechter onderhoek van het speelveld (4, 30) zeggen, en dus
+                            niet de <em>speelveld</em>-coördinaten (240,-180). <br />  <br /> 
+                            Gebruik het <img src="../../afb/h3/l4/p2-b8.png" height="35" alt="Geen Afbeelding" />blok (in het Functies-palet en
+                            speciaal gebouwd voor dit project) om de coördinaten af te ronden naar het aantal decimalen dat je wilt zien. 
+                            In deze context is een display van <img src="../../afb/h3/l4/p2-o3.png" height="55" alt="Geen Afbeelding"> zinvoller 
+                            dan <img src="../../afb/h3/l4/p2-o4.png" height="73" alt="Geen Afbeelding">.
                         </div>
                     </ol>
                 </li>
-
+                <br /><br />
                 <li>
                     Experimenteer met verschillende invoeren voor <code>maak diagramschaal</code> om te zien hoe de
-                    assen geplaatst worden en hoe de vervangende assen geplaatst worden als het punt (0,0) niet op het
-                    speelveld ligt.
-                    Sleep de sprite naar een aantal plekken om te zien of hij doet wat je verwacht. Verander dan de
-                    invoer van <code>maak diagramschaal</code> om te passen bij het bereik van de jaren en percentages
+                    assen geplaatst worden en om te zien hoe de vervangende assen geplaatst worden als het punt (0,0) niet op het
+                    speelveld ligt. Sleep de sprite naar een aantal plekken om te zien of hij doet wat je verwacht. Verander dan de
+                    invoer van <code>maak diagramschaal</code> zodat deze past bij het bereik van de jaren en percentages
                     van de data en klik erop om de schaal te resetten. Controleer opnieuw of de sprite zegt wat je
                     verwacht als je hem over het speelveld beweegt.
-                    <br />
+                    <br /><br />
                     <img class="indent" src="../../afb/h3/l4/p2-b9.png" height="50" alt="Geen Afbeelding" /></li>
-
+                    <br />
                 <li>
-                    Bouw het volgende blok dat de <strong><em>diagram</em></strong>-coördinaten van een datapunt
-                    gebruikt en de sprite beweegt naar de <strong><em>speelveld</em></strong>-coördinaten die daarbij
+                    Bouw het volgende blok dat de <em>diagram</em>-coördinaten van een datapunt
+                    gebruikt en de sprite beweegt naar de <em>speelveld</em>-coördinaten die daarbij
                     horen.
                     <br />
-                    <img class="indent" src="../../afb/h3/l4/p2-b10.png" height="120" alt="Geen Afbeelding" />.
+                    <img class="indent" src="../../afb/h3/l4/p2-b10.png" height="120" alt="Geen Afbeelding" />.<br /><br />
                     <p>
-                        Het punt (1971, 0.25) ligt ongeveer in het midden bij het babynamendiagram van Derek.
+                        Het punt (1971, 0.25) ligt ongeveer in het midden bij het babynamendiagram van Derek.<br />
                         Controleer of
                         <img src="../../afb/h3/l4/p2-b11.png" height="45" alt="Geen Afbeelding" />
-                        werkt zoals je verwacht.
+                        werkt zoals je verwacht.<br /><br />
                     </p>
-                    <img class="indent" src="../../afb/h3/l4/p2-o2.png" alt="Geen Afbeelding" />
+                    <img class="indent" src="../../afb/h3/l4/p2-o2.png" alt="Geen Afbeelding" /><br /><br />
                 </li>
                 <li>Bouw dan
-                    <img src="../../afb/h3/l4/p2-b12.png" height="50" alt="Geen Afbeelding" />
+                    <img src="../../afb/h3/l4/p2-b12.png" height="45" alt="Geen Afbeelding" />
                     zodat het
-                    <img src="../../afb/h3/l4/p2-b13.png" height="50" alt="Geen Afbeelding" />
+                    <img src="../../afb/h3/l4/p2-b13.png" height="45" alt="Geen Afbeelding" />
                     gebruikt in plaats van
-                    <img src="../../afb/h3/l4/p2-b14.png" height="50" alt="Geen Afbeelding" />.
-                    Controleer of het werkt zoals je verwacht.
+                    <img src="../../afb/h3/l4/p2-b14.png" height="45" alt="Geen Afbeelding" />.
+                    Controleer ook hier of het werkt zoals je verwacht.<br /><br />
                 </li>
                 <li>
-                    Bouw uiteindelijk
-                    <img src="../../afb/h3/l4/p2-b2.png" height="50" alt="Geen Afbeelding" />
-                    om een punt te maken voor ieder datapunt.
-                    (Voor dit diagram wil je dat de punten verbonden worden. Voor de data op de volgende pagina wil je
-                    dat niet. Zorg er dus voor dat dit makkelijk is aan te passen in dit blok)
-                    Pas het toe op <code>DerekData1927tot2015</code>. De punten van je diagram kunnen wel of niet
-                    verbonden zijn en de assen zullen geen labels hebben, maar verder moet het lijken op het diagram
-                    bij stap 3.
-                    <br />
+                    Bouw uiteindelijk  <img src="../../afb/h3/l4/p2-b2.png" height="45" alt="Geen Afbeelding" />
+                    om een punt te maken voor ieder datapunt. Voor dit diagram wil je dat de punten verbonden worden. 
+                    Voor de data op de volgende pagina wil je dat niet. Zorg er dus voor dat dit makkelijk is aan te passen in dit blok.
+                    Pas het toe op <code>DerekData1927tot2015</code>. Het moet lijken op het diagram bij stap 3., zonder labels. <br /><br />
                     <img class="indent" src="../../afb/h3/l4/p2-o5.png" height="250" alt="Geen Afbeelding" />
-                    <img src="../../afb/h3/l4/p2-o6.png" height="250" alt="Geen Afbeelding" />
+                    <img src="../../afb/h3/l4/p2-o6.png" height="250" alt="Geen Afbeelding" /><br /><br />
                 </li>
-                <li>Sla je project op als "H3L4-DiagramApp".</li>
-                <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
+                <li>Sla je project op als 'H3L4-DiagramApp'.</li><br />
+                <img class="imageLeft" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" /><br /><br />
             </ol>
+            <br /><br />
         </div>
 
         <div class="ifTime">
             <ol start="7">
                 <li>
                     Bedenk een manier om je diagram-app te vertellen dat hij de punten in het diagram wel of niet moet
-                    verbinden. Je wil hiervoor een Boolean-invoer gebruiken om aan te geven of de
-                    punten verbonden moeten zijn of niet.
-                    <br />
-                    <img class="indent" src="../../afb/h3/l4/p2-b15.png" height="50" alt="Geen Afbeelding" />
+                    verbinden. Je hebt hiervoor een Booleaans invoerveld nodig. <br /><br />               
+                    <img class="indent" src="../../afb/h3/l4/p2-b15.png" height="50" alt="Geen Afbeelding" /><br /><br />
                 </li>
             </ol>
         </div>
