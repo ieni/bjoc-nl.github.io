@@ -20,57 +20,49 @@
     <div class="full">
         <h2>Betrouwbare communicatie over onbetrouwbare verbindingen: TCP</h2>
         <div class="learn">
-            <p><strong>Op deze pagina,</strong> ga je leren over het systeem dat zorgt voor <em>betrouwbare</em>
+            <p><strong>Op deze pagina</strong> leer je over het systeem dat zorgt voor betrouwbare
                 communicatie op het internet.</p>
         </div>
 
-        <p> Computer, servers en routers zijn vrij betrouwbaar, maar soms raakt een pakket verloren. Zulke fouten moet
-            het internet aankunnen. Een manier om fouten aan te pakken is om er niks om te geven. (Als
-            je één frame van een video kwijtraakt, maakt het bijvoorbeeld niet heel veel uit.) Een andere manier (TCP
-            genaamd) is om pakketjes te blijven versturen totdat aangegeven wordt dat ze ontvangen zijn.
-            <strong>TCP (Transmission Control Protocol in het Nederlands, Verzendingcontroleprotocol)</strong>
-            garandeert <em>betrouwbare</em> dataverzending door bij te houden welke pakketjes succesvol ontvangen zijn,
-            een verloren of beschadigd pakkeetje wordt opnieuw verstuurd. Daarnaast wordt ook aangegeven wat de volgorde
-            van de data is om het weer in de goede volgorde elkaar te zetten bij de ontvanger.
-        </p>
-
-        <div class="vocabFullWidth">
-            <p> <strong>TCP en IP</strong> zijn een paar protocollen die voor abstractie zorgen. Met <strong>IP</strong>
-                doet je computer alsof het een <em>directe</em> verbinding heeft met een andere computer.
-                Met <strong>TCP</strong> doet je computer alsof het een betrouwbare verbinding heeft met een andere
-                computer.
-            </p>
-        </div>
-        <br />
-
-        <img class="imageRight" src="../../afb/icons/ZetJeKoptelefoon.png" alt="Geen Afbeelding" />
+        <p> Computer, servers en routers zijn vrij betrouwbaar, maar soms raakt een datapakketje tijdens het transport 
+            verloren. Zulke fouten moet het internet aankunnen. Een manier om fouten te tolereren is je er niks van aan 
+            te trekken. Als je één frame in een video kwijtraakt, maakt dat bijvoorbeeld meestal niet veel uit voor een kijker. 
+            Een andere manier is om pakketjes te blijven versturen totdat aangegeven wordt dat ze ontvangen zijn. TCP is zo'n manier. <strong>TCP</strong> of voluit: <strong>Transmission Control Protocol</strong>, garandeert betrouwbare dataverzending 
+            door bij te houden welke pakketjes succesvol ontvangen zijn. Een verloren of beschadigd pakketje wordt opnieuw verstuurd. 
+            Daarnaast wordt ook aangegeven wat de volgorde van de datapakketjes is, om ze weer in de goede volgorde in elkaar te zetten 
+            bij de ontvanger.
+        </p> <br />
 
         <div class="sidenote">Als je geen verbinding kan maken met YouTube,
             <a href="http://scratch.mit.edu/discuss/youtube/AYdF7b3nMto" target="_blank">
                 kijk de video dan hier.</a>.
         </div>
+        <img class="imageRight" src="../../afb/icons/headphones-mini.png" alt="Geen Afbeelding" />
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/AYdF7b3nMto?rel=0" frameborder="0"
-            allowfullscreen class="indent"></iframe>
+            allowfullscreen class="indent"></iframe>   <br />  <br />
 
         <div class="takeNote">
             <p>
                 Het end-to-endprincipe van TCP en IP is een abstractie:
                 <ul>
-                    <li> De computers aan de twee eindes van een gesprek over het internet voeren het
-                        <strong>Transmission Control Protocol</strong> (TCP) uit (in het Nederlands
-                        Verzendingsbeheerprotocol). Dit protocol garandeert dat alle verzendingen in het gesprek
-                        betrouwbaar zijn.
+                    <li>De computers (inclusief servers) aan de twee eindpunten van een communicatie gebruiken het <strong>Transmission 
+                        Control Protocol</strong> (TCP), dat een betrouwbare overdracht garandeert.
                     </li>
                     <li> De routers op ieder knooppunt op het internet voeren het <strong>internetprotocol</strong>
                         (IP) uit, dat pakketjes verzend van het ene IP-adres naar het andere.</li>
                 </ul>
             </p>
-            <p> De routers weten niks over de berichten die ze doorsturen. De computers die de berichten sturen en
-                ontvangen zijn de enige die geïnteresseerd zijn in wat de berichten betekenen.
+            <p> De routers weten niks over de berichten die ze doorsturen. De computers die de berichten verzenden en
+                ontvangen zijn de enigen die geïnteresseerd zijn in de betekenis van de berichten.
             </p>
-        </div>
-
+        </div>  <br />
+        <div class="vocabFullWidth">
+            <p> <strong>TCP</strong> en <strong>IP</strong> zijn een paar <strong>netwerkprotocollen</strong> die voor abstractie 
+                zorgen. Een protocol is een gedragsovereenkomst en een netwerkprotocol is een afgesproken communicatiewijze voor netwerkcomponenten. Met <strong>IP</strong> doet je computer alsof er een <em>directe</em> verbinding is met 
+                een andere computer (terwijl er in werkelijkheid allerlei knooppunten tussen zitten). Met <strong>TCP</strong> doet je computer alsof het een <em>betrouwbare</em> verbinding heeft met een andere computer (terwijl er in feite gewerkt wordt met een optelling van verstuurde data).
+            </p>
+        </div>  <br />
         <div class="forYouToDo">
             <ol>
                 <li>
@@ -103,15 +95,15 @@
 
                 </li>
             </ol>
-        </div>
-        <p> TCP voegt extra informatie toe aan ieder pakketje zodat de ontvanger kan bijhouden hoeveel pakketjes er al
-            ontvangen zijn, missende pakketjes opnieuw kan aanvragen en de pakketjes in de goeie volgorde kan
-            terugzetten. In de simulatie hierboven arriveert een pakket correct (niet per se in de goede volgorde) of
+        </div><br />
+        <p> TCP voegt extra informatie toe aan ieder pakketje zodat de ontvanger (1) kan bijhouden hoeveel pakketjes er al
+            ontvangen zijn, (2) missende pakketjes opnieuw kan aanvragen en (3) de pakketjes in de goeie volgorde kan
+            zetten na ontvanst. In de simulatie hierboven arriveert een pakket correct (niet per se in de goede volgorde) of
             het arriveert nooit. Dus als we een 'B' versturen komt er óf een 'B' aan of niks, het is niet mogelijk dat
             er een 'C' arriveert. Maar op het internet is zoiets wel mogelijk. Het kan zo maar zijn dat een pakket
-            arriveert met <em>fouten in de data</em> dus het TCP moet controleren of er fouten in het pakket zitten en
+            arriveert met <em>fouten in de data</em>, dus het TCP moet controleren of er fouten in het pakket zitten en
             vragen of het pakketje opnieuw verzonden kan worden.
-        </p>
+        </p><br />
 
         <div class="ifTime">
             <ol start="3">
@@ -121,40 +113,39 @@
             </ol>
         </div>
 
-
         <div class="takeItFurther">
-            <img class="imageRight" src="../../afb/icons/UitermateUitdagend.png" alt="Geen Afbeelding" />
+            <img class="imageRight" src="../../afb/icons/UiterUitagend-mini.png" alt="Geen Afbeelding" />
             <ol type="A">
                 <li> Bouw een simpele versie van TCP na. Los de onbetrouwbaarheid op zodat berichten betrouwbaar
-                    ontvangen worden ondanks de beperkingen van IP-pakketjes. Je moet de volgende blokken
+                    ontvangen worden, ondanks de beperkingen van IP-pakketjes. Je moet de volgende blokken
                     <strong>aanpassen:</strong>
                     <ul>
-                        <li><img height="40" src="../../afb/h4/l2/p2-b1.png" alt="Geen Afbeelding" /></li>
-                        <li><img height="40" src="../../afb/h4/l2/p2-b2.png" alt="Geen Afbeelding" /></li>
-                    </ul>
+                        <li><img height="45" src="../../afb/h4/l2/p2-b1.png" alt="Geen Afbeelding" /></li>
+                        <li><img height="45" src="../../afb/h4/l2/p2-b2.png" alt="Geen Afbeelding" /></li>
+                    </ul><br />
 
                     <div class="endnote">
-                        <strong>Pas <em>niet</em> </strong> <img height="40" src="../../afb/h4/l2/p2-b3.png"
+                        Pas <em>niet</em> <img height="45" src="../../afb/h4/l2/p2-b3.png"
                             alt="Geen Afbeelding"> aan.
-                        Dat blok simuleert het onbetrouwbare netwerk. Je kan het probleem "oplossen" door dit blok te
-                        herschrijven om een perfect netwerk te maken, maar dan mis je het punt van deze opdracht.
-                    </div>
+                        Dat blok simuleert het onbetrouwbare netwerk. Je zou het probleem wel <em>kunnen</em> oplossen door dit blok te
+                        herschrijven om een perfect netwerk te simuleren, maar dan mis je het punt van deze opdracht.
+                    </div><br />
 
-                    Om dit probleem op te lossen heb je een manier nodig om de volgorde van de gegevens bij te houden
-                    <em>en</em> een manier om missende pakketjes opnieuw aan te vragen.
+                    Om dit probleem aan te pakken heb je een manier nodig om de volgorde van de gegevens bij te houden
+                    <em>en</em> een manier om ontbrekende pakketjes opnieuw aan te vragen.
                     <ul>
                         <li>Los eerst het probleem op van pakketjes die in de verkeerde volgorde arriveren. Je kan extra
                             informatie meegeven bij de data van het pakket om de ontvanger te helpen het originele
-                            bericht te maken. Dit vergt samenwerking van de zender en de ontvanger (dus je moet allebei
-                            de grijze blokken aanpassen).
+                            bericht te reconstrueren. Dit vergt samenwerking van de zender en de ontvanger, dus je moet allebei
+                            de grijze blokken aanpassen.
                         </li>
-                        <li> Los daarna het probleem op van pakketjes die überhaupt niet arriveren. Dit maak verzending
-                            betrouwbaar, ook al is IP alleen niet betrouwbaar. Hiervoor moet je ook allebei de
+                        <li> Los daarna het probleem op van pakketjes die überhaupt niet arriveren. Dit wil zeggen: maak 
+                            de verzending betrouwbaar, ook al is IP alleen niet betrouwbaar. Hiervoor moet je ook allebei de
                             grijze blokken aanpassen.
                         </li>
                     </ul>
                 </li>
-            </ol>
+            </ol><br />
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
