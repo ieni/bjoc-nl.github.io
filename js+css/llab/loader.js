@@ -1,9 +1,9 @@
 //Add Hypothesis Annotation
-var script = document.createElement('script');
-script.src = 'https://hypothes.is/embed.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-document.getElementsByTagName('head')[0].async = true
+//var script = document.createElement('script');
+//script.src = 'https://hypothes.is/embed.js';
+//script.type = 'text/javascript';
+//document.getElementsByTagName('head')[0].appendChild(script);
+//document.getElementsByTagName('head')[0].async = true
 
 var Inhoudsopgave = function () {
     document.getElementsByTagName("title")[0].innerHTML +=
@@ -13,20 +13,20 @@ var Inhoudsopgave = function () {
 
 
 
-window.hypothesisConfig = function () {
-    return {
-        "showHighlights": false,
-        branding: {
-            appBackgroundColor: '#eee',
-            accentColor: 'black    ',
-            ctaBackgroundColor: 'grey',
-            ctaTextColor: 'white',
-            selectionFontFamily: 'arial, sans serif',
-            annotationFontFamily: 'arial, sans serif'
-        }
-
-    };
-};
+//window.hypothesisConfig = function () {
+//    return {
+//        "showHighlights": false,
+//        branding: {
+//            appBackgroundColor: '#eee',
+//            accentColor: 'black    ',
+//            ctaBackgroundColor: 'grey',
+//            ctaTextColor: 'white',
+//            selectionFontFamily: 'arial, sans serif',
+//            annotationFontFamily: 'arial, sans serif'
+//        }
+//
+//    };
+//};
 
 
 // Polyfills for older browsers
