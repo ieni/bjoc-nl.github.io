@@ -20,13 +20,13 @@
     <div class="full">
         <h2> Symmetrische cryptografie</h2>
         <div class="learn">
-            <p> <strong> Op deze pagina,</strong> ga je een simpele methode voor symmetrische versleuteling leren. </p>
+            <p> <strong> Op deze pagina</strong> leer je over een simpele methode voor symmetrische versleuteling. </p>
         </div>
 
 
         <p>
-            Je hebt misschien ooit een <strong> vervanging-cijfer</strong> gebruikt om je bericht te coderen, waarbij je
-            iedere letter in het alfabet vervangt met een andere letter. Je kan letters vervangen in elke volgorde:
+            Je hebt misschien ooit een <strong>substitutieversleuteling</strong> gebruikt om je bericht te coderen, waarbij je
+            iedere letter in het alfabet vervangt door een willekeurige andere letter. Zoals in dit voorbeeld:
 
             <div class="indent fixedwidth">
                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -38,49 +38,46 @@
                 </span>
                 <strong>Dit is de sleutel</strong>
             </div>
-
-            Dat heet een <strong> simpele vervanging-cijfer</strong> .
+            Het is een <strong>simpele substitutieversleuteling</strong>. <br />
         </p>
-        <p>
-            Een makkelijkere manier is om gewoon iedere letter in volgorde te <em>verschuiven</em> . Dit is
-            bijvoorbeeld een verschuiving van 3:
+        <p> 
+           Een eenvoudigere manier is om de letters in volgorde te verschuiven. Dit is bijvoorbeeld een verschuiving van 3:
             <div class="indent fixedwidth"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
             <div>
                 <span class="indent fixedwidth"> DEFGHIJKLMNOPQRSTUVWXYZABC<img class="noshadow nopad"
                         src="../../afb/h4/l3/p2-o1.jpg" alt="Geen Afbeelding" /> </span>
                 <strong>Dit is de sleutel</strong>
             </div>
-            Dat is een speciale soort simpele vervanging-cijfer, <strong> Caesarcijfer</strong> genaamd, vernoemd naar
+            Het is een speciaal soort simpele substitutieversleuteling, genaamd <strong>Caesarcijfer</strong>, vernoemd naar
             Julius Caesar.
-        </p>
-        <div class="takeNote"> Vervanging-cijfers zijn voorbeelden van <strong> symmetrische
+        </p><br />
+        <div class="takeNote"> Deze twee substitutieversleutelingen zijn voorbeelden van <strong> symmetrische
                 versleuteling</strong> omdat ze dezelfde sleutel gebruiken voor versleuteling en ontcijfering. Er zijn
-            ingewikkeldere manieren voor symmetrische versleuteling.
+            ingewikkeldere manieren voor symmetrische versleuteling, maar ze gebruiken altijd dezelfde sleutel.
         </div>
-        <div class="endnote"> Tot de jaren 70 was symmetrsiche versleuteling de enige manier om berichten te
-            versleutelen. Alleen werden veel ingewikkeldere algoritmes gebruikt dan vervanging-cijfers. Tegenwoordig
-            worden vervangingscijfers alleen gebruikt voor bijvoorbeeld puzzels in tijdschriften. De Duitse
-            Enigma-cijfer in de Tweede Wereldoorlog is een voorbeeld van zo'n ingewikkeld algoritme. In Hoofdstuk 5 zal
-            je leren dat er vele wiskundigen en computers voor nodig waren om die op te lossen.
-        </div>
+        <div class="endnote"> Tot de jaren 70 was symmetrische versleuteling de enige manier om berichten te
+            versleutelen. Wel werden meestal veel ingewikkeldere algoritmes gebruikt dan hierboven. Tegenwoordig
+            worden ze alleen nog gebruikt voor in puzzels in tijdschriften. De Duitse Enigma-code uit de Tweede Wereldoorlog 
+            is een voorbeeld van zo'n ingewikkeld algoritme. In <a href="../hoofdstuk-5/H5L4P2.html">H5L4P2 </a>(onderaan) leer je 
+            dat er een gebouw vol wiskundigen en vroege computerapparatuur nodig was om die code op te lossen.
+        </div><br />
 
         <div class="forYouToDo" id="first">
+            <img class="imageRight" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
             <ol>
-                <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                <br />
-                <li> De persoon die je bericht krijgt, moet weten hoe hij het moet ontcijferen. Beschrijf een algoritme
-                    om berichten te ontcijferen die versleuteld zijn met een Caesar-cijfer
+                <li> De persoon die jouw bericht krijgt, moet weten hoe hij het moet ontcijferen. Beschrijf een algoritme
+                    om berichten te ontcijferen die versleuteld zijn met een Caesarcijfer
                 </li>
             </ol>
-        </div>
+        </div><br />
 
         <div class="ifTime">
             <ol start="2">
-                <li> Als je een bericht onderschept dat versleuteld is met een simpele vervanging-cijfer, hoe kan je het
-                    dan decoderen zonder dat je de sleutel weet?
+                <li> Als je een bericht onderschept dat versleuteld is met een simpele substitutieversleuteling, hoe kan je het
+                    dan decoderen zonder de sleutel te kennen?
                 </li>
-                <li> Wat zijn manieren voor de zender en ontvanger om de versleuteling veiliger te maken dan een simpele
-                    vervanging-cijfer?
+                <li> Wat zijn manieren voor een zender en ontvanger om de versleuteling veiliger te maken dan een simpele
+                    substitutieversleuteling?
                 </li>
             </ol>
         </div>
@@ -88,14 +85,14 @@
         <div class="takeItFurther">
             <ol type="A">
                 <li>
-                    Een simpele vervanging-cijfer is vrij gemakkelijk om te breken omdat sommige letters vaker gebruikt
+                    Een simpele substitutieversleuteling is vrij gemakkelijk te breken, doordat sommige letters vaker gebruikt
                     worden dan andere.
-
                     <ul>
                         <li> Lees over Al-Kindi, de Arabische filosoof en wiskundige die als eerste beschreef hoe je met
-                            frequentie-analyse codes kon breken in "Breaking Substitution Ciphers"
-                            (<a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=185"
-                                target="_blank"> <em> Blown to Bits</em> pagina's 166-169</a> ). </li>
+                            frequentie-analyse codes kon breken in 'Breaking Substitution Ciphers' op pagina 166-169 van 
+                            <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=185"
+                                target="_blank"> <em>Blown to Bits</em> </a>. 
+                            </li>
                         <li> Deze methode wordt tegenwoordig nog steeds gebruikt: <a
                                 href="http://www.forbes.com/sites/thomasbrewster/2015/09/03/microsoft-dumb-attacks-cracks-next-gen-cryptography/"
                                 target="_blank"> How a 1200-year-old Hacking Technique Can Already Crack Tomorrow's
@@ -104,12 +101,12 @@
                 </li>
 
 
-                <li> Lees "Secret Keys and One-Time Pads" (<a
-                        href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=187" target="_blank">
-                        <em> Blown to Bits</em> pages 169-173</a> ) om te leren over Vigenère-cijfers en
-                    de methodes die gebruikt werden tijdens de Tweede Wereldoorlog en de Koude Oorlog.
+                <li> Lees ook 'Secret Keys and One-Time Pads', pagina 169-173 van 
+                    <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=187" target="_blank">
+                    <em>Blown to Bits</em></a>, over Vigenère-cijfers en andere cryptografische methodes die gebruikt werden in de 
+                    Tweede Wereldoorlog en in de Koude Oorlog.
                 </li>
-            </ol>
+            </ol><br />
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
