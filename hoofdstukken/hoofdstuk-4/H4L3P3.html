@@ -20,48 +20,49 @@
     <div class="full">
         <h2>Caesarcijferproject</h2>
 
-        <div class="learn"><strong>Op deze pagina,</strong> ga je werken met de Caesarcijfer.
+        <div class="learn"><strong>Op deze pagina</strong> werk je met het Caesarcijfer.
         </div>
 
-        <p> Een Caesarcijfer (of schuifcijfer) is een simpele versleutelmethode. Iedere letter in zogenaamde "platte
-            tekst" (de nog onversleutelde tekst), verschuift de letters in het alfabet een vast aantal posities. Na de
-            'Z', gaat de verschuiving weer door aan het begin, dus bij de 'A'. Dus als we bijvoorbeeld "ABCZ123abcz" 4
-            posities verschuiven krijgen we "EFGD567efgd". Deze techniek is vernoemd naar Julius Caesar, omdat hij zijn
-            brieven versleutelde op deze manier.
+        <p> Een Caesarcijfer (of schuifcijfer) is een simpele versleutelingsmethode. Iedere letter in zogenaamde 'klare
+            tekst' (de niet-versleutelde tekst), verschuift een vast aantal posities in het alfabet. Na de
+            'Z', start de verschuiving weer bij de 'A'. Verschuif 'ABCZ123abcz' vier posities en je krijgt 'EFGD567efgd'. 
+            Deze techniek is vernoemd naar Julius Caesar, omdat hij zijn brieven versleutelde op deze manier.
         </p>
 
-        <p> In dit project ga je een programma ontwikkelen dat een schuifcijfer gebruikt dat niet na de 'Z' naar de 'A'
+        <p> In dit project ontwikkel je een programma dat een schuifcijfer gebruikt dat niet na de 'Z' naar de 'A'
             verschuift. In plaats daarvan gebruiken we andere tekens zoals '[' en '{'.
         </p>
 
-        <p> In de computer worden alle tekens van je toetsenbord (Hoofdletters, kleine letters, spaties, leestekens,
-            getallen en andere symbolen) opgeslagen als getallen. Om te zorgen dat iedere computer dezelfde
-            tekens naar dezelfde getallen omzet, gebruikt iedere computer Unicode, dit is het
-            standaardprotocol dat zegt welk getal welk teken moet zijn. Over het algemeen hoeft een programmeur
-            niet te weten welk getal welk teken is, maar soms moet je een teken specificeren door het getal te noemen.
-            De tabel hieronder geeft de Unicode voor een aantal tekens.
-        </p>
+        <p> In de computer worden alle tekens van je toetsenbord (niet alleen letters en hoofdletters, maar ook spaties, 
+            leestekens, cijfers en andere symbolen) opgeslagen als een getallenreeks. Om te zorgen dat iedere computer 
+            dezelfde tekens naar dezelfde getallen omzet, gebruikt iedere computer Unicode als standaardprotocol. Over het 
+            algemeen hoeft een programmeur niet te weten welk getal naar welk teken verwijst, maar soms moet je een teken 
+            specificeren door het getal te noemen. De tabel hieronder geeft de Unicode voor een aantal tekens.
+        </p><br />
 
         <img class="indent" src="../../afb/h4/l3/p3-o1.jpeg" height="350" alt="Geen Afbeelding" />
+        <br /><br />
 
         <p> Het <code>unicode waarde van</code>blok rapporteert het getal dat gebruikt wordt voor een bepaald teken:
             <br />
+
             <img class="indent" src="../../afb/h4/l3/p3-b1.png" height="52" alt="Geen Afbeelding" />
-            <br />
+            <br /><br />
+
             Het <code>unicode als letter</code>blok rapporteert het teken dat wordt weergegeven voor een bepaald
             getal in Unicode:
             <br />
             <img class="indent" src="../../afb/h4/l3/p3-b2.png" height="52" alt="Geen Afbeelding" />
-        </p>
+        </p><br />
 
         <div class="endnote">
             <a href="#hint-characters" data-toggle="collapse"> Waarom staan er leestekens en symbolen zoals
                 <strong> = ? @ # ^ * { </strong> of <strong>~</strong>? </a>
 
             <div id="hint-characters" class="collapse">
-                <p> Als een bepaalde set tekens een redelijke afstand verschoven wordt dan mag je aannemen dat de nieuwe
-                    tekens nog steeds leesbare tekens zijn. De set kan wel een aantal non-alfanumerieke tekens
-                    bevatten. Non-alfanumeriek betekent dat het geen letters of cijfers zijn.
+                <p> Wanneer een bepaalde set tekens over een redelijke afstand verschoven wordt, dan mag je aannemen 
+                    dat de nieuwe tekens nog steeds leesbare tekens zijn. De nieuwe set kan wel niet-alfanumerieke tekens
+                    bevatten. (Niet-alfanumeriek betekent: geen letters of cijfers.)
                 </p>
 
                 <p> Als we bijvoorbeeld een verschuiving van 4 plaatsen gebruiken om de volgende tekst te
@@ -72,69 +73,65 @@
                 <p class="indent"><em><strong>Hi$wpek$sq$Evrliq$[ew$st$5;$witxiqfiv$5=88</strong></em></p>
                 <p>
                     <ul>
-                        <li> Welk teken in de cijfertekst (de versleutelde versie) staat voor een spatie in de platte
-                            tekst?
+                        <li> Welk teken in de versleutelde tekst staat voor een spatie in de platte tekst?
                         </li>
-                        <li> Bij deze cijfer, wordt een 1 een 5 en een 4 een 8, dus de verschuiving van 4 is duidelijke
+                        <li> In deze code, wordt een 1 een 5 en een 4 een 8, dus de verschuiving van 4 is duidelijk
                             te zien. Wat wordt een 9?
                         </li>
                     </ul>
                 </p>
             </div>
-        </div>
+        </div><br />
 
         <div class="forYouToDo" id="second">
             <ol>
-                <li> Maak met pen en papier gebruik van een schuifcijfer om een kort bericht te versleutelen en daarna
-                    weer te ontcijferen om een gevoel te krijgen voor hoe de cijfer werkt.
+                <li> Versleutel en decodeer met pen en papier een kort bericht met een schuifcijfer.
                 </li>
-                <li> Ontwikkel een algoritme voor het versleutelen en ontcijferen dat werkt voor iedere tekst en iedere
-                    verschuiving.
+                <li> Ontwikkel een algoritme voor deze procedure dat werkt voor elke invoertekst en voor elke verschuivingswaarde.
                 </li>
-                <li> Probeer de schuifcijfer zelf in Snap<em>!</em> te bouwen met je algoritme, als je vastloopt, kijk
+                <li> Probeer nu het schuifcijfer met jouw algoritme in Snap<em>!</em> te bouwen. Loop je vast, kijk
                     dan naar deze <a href="H4L3P3hints.html">pagina voor hints</a>.
                 </li>
-                <p> Je kan het versleutelde bericht uit Snap<em>!</em> halen door met de rechtermuisknop op de variabele
-                    te klikken waarin je versleutelde bericht zit en daarna op "exporteren..." te klikken. Hierna zal
+                <p> Je haalt een versleuteld bericht uit Snap<em>!</em> door met de rechtermuisknop te klikken op de variabele 
+                    die je versleutelde bericht bevat, en daarna 'exporteren...' te selecteren. Nu zal
                     een tekstbestand worden gedownload met daarin je versleutelde bericht.
-                    <br />
+                    <br /><br />
                     <img class="indent" src="../../afb/h4/l3/p3-o2.png" width="350" alt="Geen Afbeelding" />
                 </p>
-                <li> Test nu je programma. Kies samen met je partner een verschuiving voor de cijfer. Gebruik daarna je
-                    programma om een geheim bericht te versleutelen en stuur dit bericht naar je partner via
+                <li> Test nu je programma. Kies samen met je partner een verschuiving voor de versleuteling. Gebruik daarna je
+                    programma om een geheim bericht te versleutelen en stuur dit bericht naar je partner, via
                     bijvoorbeeld een e-mail. Laat je partner daarna het bericht ook weer ontcijferen met je programma.
                 </li>
 
                 <div class="endnote">
                     <a href="#hint-target" data-toggle="collapse"> Ik mis een aantal letters, waar zijn ze heen?</a>
                     <div id="hint-target" class="collapse">
-                        Als je je versleutelde bericht niet kopieert en plakt maar op een andere manier overneemt
-                        (bijvoorbeeld door het op te schrijven of in je telefoon te typen), dan mis je een aantal tekens
-                        in je bericht. Dit komt doordat Unicode-tekens na 126 niet meer leesbaar zijn, ze symboliseren
-                        dingen zoals "verwijder". Deze tekens zie je niet in Snap<em>!</em>, dus je kan ze niet met de
-                        hand kopiëren. Als je ze dus kopieert en plakt met "Ctrl-C" en dan "Ctrl-V", dan
-                        heb je ze wel. In opdracht A van "Een stapje verder", ontwikkel je een methode om dit probleem
-                        te omzeilen.
+                        Als je je versleutelde bericht niet gewoon kopieert en plakt, maar op een andere manier overneemt
+                        (bijvoorbeeld door het op te schrijven of in je telefoon te typen), dan verdwijnen mogelijk een 
+                        aantal tekens uit je bericht. Dit komt doordat sommige Unicode-tekens na 126 afdruktekens dingen 
+                        symboliseren zoals 'verwijder'. Deze tekens worden niet weergegeven in Snap<em>!</em>, dus je kunt 
+                        ze niet met de hand kopiëren. Met copy and paste via 'Ctrl-C' en dan 'Ctrl-V', lukt het wel. 
+                        In opdracht A van 'Een stapje verder', ontwikkel je een methode om dit probleem te omzeilen.
                     </div>
                 </div>
 
             </ol>
-        </div>
+        </div><br />
 
         <div class="takeItFurther">
             <ol type="A">
-                <li> Bouw een versie van de Caesarcijfer die niet alleen de tekens verschuift maar ook weer bij het
-                    begin van het alfabet begint wanneer het einde is bereikt. Je wil wellicht dat je alfabet alleen
-                    leesbare tekens bevat, dus alleen de tekens in de Unicodetabel die bovenin de pagina stond.
+                <li> Bouw een versie van de Caesarcijfer die niet alleen de tekens verschuift, maar ook weer bij het
+                    begin van het alfabet begint wanneer het einde is bereikt. Beperk het alfabet tot de set leesbare tekens, 
+                    zie de Unicodetabel bovenaan de pagina.
                 </li>
                 <li> Als je een lang bericht tegenkomt dat versleuteld is met een Caesarcijfer, wat is dan een manier om
-                    het bericht te ontcijferen zonder dat je weet hoeveel plekken de tekens verschoven zijn? Bespreek de
-                    zwaktes van een Caesarcijfer en hoe het gemakkelijk te breken is.
+                    de code te kraken als je de waarde van de verschuiving niet kent? Bespreek de zwakke punten van een 
+                    Caesarcijfer en hoe het gemakkelijk te breken is.
                 </li>
-                <li> Doe wat onderzoek naar andere soorten cijfers die vroeger gebruikt werden. Zoek bijvoorbeeld naar
+                <li> Doe wat onderzoek naar andere soorten versleutelingen die vroeger gebruikt werden. Zoek bijvoorbeeld naar
                     het Vigenèrecijfer, dat veel gebruikt is tijdens de Tweede Wereldoorlog.
                 </li>
-                <li> Bedenk je eigen cijfer en bouw het in Snap<em>!</em>.
+                <li> Bedenk je eigen versleuteling? en bouw het in Snap<em>!</em>.
                 </li>
             </ol>
         </div>
